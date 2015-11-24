@@ -17,8 +17,9 @@ class StateNode(object):
 
 def play_game(player_policies):
     """
-    :param player_policies: List of policy functions for players X and O
-     which determine how each player moves given a particular state
+    :param player_policies: List of policy classes for players X and O
+     which determine how each player moves given a particular state. Each
+     policy class should inherit from Policy.
     :return: Returns a NetworkX Graph object describing the game
     """
     game = GameState()
@@ -35,7 +36,7 @@ def play_game(player_policies):
             plies += 1
             print("\nPly #{}. It is {}'s move.".format(plies, game.turn))
 
-            game.move(*player_policy(game))
+            game.move(*player_policy.move(game))
 
             previous = current
             G.add_node(str(game))
