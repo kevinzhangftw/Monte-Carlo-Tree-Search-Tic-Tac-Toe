@@ -10,7 +10,7 @@
 
 First, it generates one [game graph](game_graph.png).
 
-Then, it plays multiple games, and composes their graphs:
+Then, it plays multiple games, and [composes their graphs](multiple_game_graph.png):
 
 ![](multiple_game_graph.png)
 
