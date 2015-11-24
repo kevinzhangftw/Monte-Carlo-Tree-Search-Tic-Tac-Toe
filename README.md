@@ -8,11 +8,9 @@
 ## Example files
 **example_figures.py** Generates sample figures visualizing game trees.
 
-First, it generates one game graph:
+First, it generates one [game graph](game_graph.png).
 
-<img src="game_graph.png" style="height: 400px;"/>
-
-Then, it plays multiple games, and composes their graphs:
+Then, it plays multiple games, and [composes their graphs](multiple_game_graph.png):
 
 ![](multiple_game_graph.png)
 
