@@ -10,10 +10,10 @@ Requires the NetworkX graph package and GraphViz, which are included in
 Anaconda
 """
 from gameplay import play_game
-from policies import random_policy
+from policies import RandomPolicy
 import networkx as nx
 
-player_policies = [random_policy, random_policy]
+player_policies = [RandomPolicy(), RandomPolicy()]
 G = play_game(player_policies)
 
 dot_graph = nx.to_pydot(G)
