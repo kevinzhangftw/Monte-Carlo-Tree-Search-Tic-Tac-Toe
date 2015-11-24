@@ -5,6 +5,7 @@ Defines a Tic Tac Toe game state object with an associated transition function,
 a legal moves function, a move function, and a terminal state detector.
 Includes unit tests to verify proper functionality.
 """
+import copy
 
 
 class GameState(object):
@@ -33,25 +34,20 @@ class GameState(object):
         state. Can be used to print the current game state of a game:
           print(game.state)
         will print a game board:
-           |X|
-          -----
-          O| |
-          -----
-           | |X
-
+          ~X~
+          O~~
+          ~~X
         """
         output = ''
         for row in range(3):
             for col in range(3):
                 contents = self.board[row][col]
                 if col < 2:
-                    output += '{}|'.format(contents)
+                    output += '{}'.format(contents)
                 else:
                     output += '{}\n'.format(contents)
-            if row < 2:
-                output += '-----\n'
 
-        output += 'Winner: {}'.format(self.winner())
+        output = output.replace(' ', '~')
 
         return output
 
@@ -61,9 +57,6 @@ class GameState(object):
         determined by whose turn it is, either 'X' or 'O'.
         """
         self.board[row][col] = self.turn
-
-        # # Check if it results in a terminal state
-        # self.terminal = self.winner()
 
         self._advance_turn()
 
@@ -114,11 +107,12 @@ class GameState(object):
         assert (row, col) in self.legal_moves()
 
         # First, make a copy of the current state
-        new_state = GameState()
-        new_state.board = self.board
-        new_state.turn = self.turn
+        new_state = copy.deepcopy(self)
+
         # Then, apply the action to produce the new state
         new_state.move(row, col)
+
+        return new_state
 
     def winner(self):
         """
@@ -183,12 +177,9 @@ class TestGamePlay(unittest.TestCase):
 
         game = GameState()
 
-        assert str(game) == (" | | \n"
-                             "-----\n"
-                             " | | \n"
-                             "-----\n"
-                             " | | \n"
-                             "Winner: None")
+        assert str(game) == ("~~~\n"
+                             "~~~\n"
+                             "~~~\n")
 
         assert game.legal_moves() == [(0, 0), (0, 1), (0, 2),
                                       (1, 0), (1, 1), (1, 2),
@@ -201,16 +192,12 @@ class TestGamePlay(unittest.TestCase):
         game.move(1, 0)  # O
         game.move(2, 1)  # X
 
-        assert str(game) == (" | |O\n"
-                             "-----\n"
-                             "O|X|X\n"
-                             "-----\n"
-                             " |X| \n"
-                             "Winner: None")
+        assert str(game) == ("~~O\n"
+                             "OXX\n"
+                             "~X~\n")
 
         # Keep track of the current game state so we can some alternate end
         # games from this point later
-        import copy
         game_copy1 = copy.deepcopy(game)
         game_copy2 = copy.deepcopy(game)
 
@@ -234,12 +221,9 @@ class TestGamePlay(unittest.TestCase):
         game_copy2.move(0, 1)  # O
         game_copy2.move(2, 0)  # X
         assert game_copy2.winner() == 'Tie'
-        assert str(game_copy2) == ("X|O|O\n"
-                                   "-----\n"
-                                   "O|X|X\n"
-                                   "-----\n"
-                                   "X|X|O\n"
-                                   "Winner: Tie")
+        assert str(game_copy2) == ("XOO\n"
+                                   "OXX\n"
+                                   "XXO\n")
 
 
 if __name__ == '__main__':
