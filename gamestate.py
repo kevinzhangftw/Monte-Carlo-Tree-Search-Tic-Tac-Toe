@@ -21,17 +21,11 @@ class GameState(object):
     """
     def __init__(self):
         # Begin with an empty game board
-        # self.board = ['   ',
-        #               '   ',
-        #               '   ']
         self.board = [[' ', ' ', ' '],
                       [' ', ' ', ' '],
                       [' ', ' ', ' ']]
         # The first player is 'X'
         self.turn = 'X'
-        # # Terminal state indicator, can be either of: 'X', 'O' or None to
-        # # indicate if the game has been won
-        # self.terminal = None
 
     def __str__(self):
         """
