@@ -27,31 +27,31 @@ Then, it plays multiple games, and [composes their graphs](multiple_game_graph.p
 
 ### X MCTS vs O Random
 #### Trial #1
-![](x_mcts_vs_o_random_1.png)
+![](results/1_2/x_mcts_vs_o_random_1.png)
 
 #### Trial #2
-![](x_mcts_vs_o_random_2.png)
+![](results/1_2/x_mcts_vs_o_random_2.png)
 
 ### X Random vs O MCTS
 #### Trial #1
-![](x_random_vs_o_mcts_1.png)
+![](results/1_2/x_random_vs_o_mcts_1.png)
 
 #### Trial #2
-![](x_random_vs_o_mcts_2.png)
+![](results/1_2/x_random_vs_o_mcts_2.png)
 
 ### X MCTS vs O MCTS
 #### Trial #1
-![](x_mcts_vs_o_mcts_1.png)
+![](results/1_2/x_mcts_vs_o_mcts_1.png)
 
 #### Trial #2
-![](x_mcts_vs_o_mcts_2.png)
+![](results/1_2/x_mcts_vs_o_mcts_2.png)
 
 ### X Random vs O Random
 #### Trial #1
-![](x_random_vs_o_random_1.png)
+![](results/1_2/x_random_vs_o_random_1.png)
 
 #### Trial #2
-![](x_random_vs_o_random_2.png)
+![](results/1_2/x_random_vs_o_random_2.png)
 
 ## Parameter Settings
 - Trials #1 and #2 were conducted with a computation budget of 25 and were run for 100 simulations
