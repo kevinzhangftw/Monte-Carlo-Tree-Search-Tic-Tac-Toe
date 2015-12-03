@@ -3,7 +3,7 @@
 ## Core files
 - **gamestate.py** Defines a Tic Tac Toe game state object with an associated transition function, a legal moves function, a move function, and a terminal state detector. Includes unit tests to verify proper functionality.
 - **gameplay.py** Function to play a game given a policy for each player and keep track of the game as a NetworkX game tree.
-- **policies.py** Game play policies can be defined here.
+- **policies.py** Game play policies can be defined here. Currently the following policies are defined: MCTSPolicy, RandomPolicy
 
 ## Example files
 **example_figures.py** Generates sample figures visualizing game trees.
