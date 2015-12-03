@@ -15,17 +15,26 @@ Random_vs_MCTS = [RandomPolicy(), MCTSPolicy(player='O')]
 MCTS_vs_MCTS = [MCTSPolicy(player='X'), MCTSPolicy(player='O')]
 Random_vs_Random = [RandomPolicy(), RandomPolicy()]
 
-experiments = [MCTS_vs_Random,
-               MCTS_vs_Random,
-               Random_vs_MCTS,
-               Random_vs_MCTS,
-               MCTS_vs_MCTS,
-               MCTS_vs_MCTS,
-               Random_vs_Random,
-               Random_vs_Random]
+experiments = [[MCTSPolicy(player='X'), RandomPolicy()],
+               [MCTSPolicy(player='X'), RandomPolicy()],
+               [RandomPolicy(), MCTSPolicy(player='O')],
+               [RandomPolicy(), MCTSPolicy(player='O')],
+               [MCTSPolicy(player='X'), MCTSPolicy(player='O')],
+               [MCTSPolicy(player='X'), MCTSPolicy(player='O')],
+               [RandomPolicy(), RandomPolicy()],
+               [RandomPolicy(), RandomPolicy()]]
+
+names = ['x_mcts_vs_o_random_1',
+         'x_mcts_vs_o_random_2',
+         'x_random_vs_o_mcts_1',
+         'x_random_vs_o_mcts_2',
+         'x_mcts_vs_o_mcts_1',
+         'x_mcts_vs_o_mcts_2',
+         'x_random_vs_o_random_1',
+         'x_random_vs_o_random_2']
 
 
-def run_experiment(player_policies):
+def run_experiment(player_policies, experiment_name):
     # Number of games to play per experiment
     n = 100
 
@@ -54,7 +63,6 @@ def run_experiment(player_policies):
         X_win_rate[i] = X_wins[i] / (i + 1)
         O_win_rate[i] = O_wins[i] / (i + 1)
 
-
     from collections import Counter
     c = Counter(winners)
     print(c.items())
@@ -74,10 +82,12 @@ def run_experiment(player_policies):
     plt.legend(['X', 'O'])
     plt.xlabel('simulation')
     plt.ylabel('cumulative win rate')
+    plt.ylim([-0.1, 1.1])
+    plt.title('Experiment ID: {}'.format(name.replace('_', ' ').upper()))
 
     # Save figure to disk with a unique identifier
     import uuid
-    plt.savefig(str(uuid.uuid4()))
+    plt.savefig('{}.png'.format(experiment_name))
     # plt.show()
     plt.cla()
 
@@ -100,5 +110,5 @@ def run_experiment(player_policies):
     # dot_graph.set_graph_defaults(fontname='Courier')
     # dot_graph.write_png('multiple_game_graph_mcts_vs_random.png')
 
-for experiment in experiments:
-    run_experiment(experiment)
+for experiment, name in zip(experiments, names):
+    run_experiment(experiment, name)
