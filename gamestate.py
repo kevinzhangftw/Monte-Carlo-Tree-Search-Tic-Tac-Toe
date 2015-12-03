@@ -25,8 +25,17 @@ class GameState(object):
         self.board = [[' ', ' ', ' '],
                       [' ', ' ', ' '],
                       [' ', ' ', ' ']]
-        # The first player is 'X'
-        self.turn = 'X'
+
+    # GameState needs to be hashable so that it can be used as a unique graph
+    # node in NetworkX
+    def __key(self):
+        return self.__str__()
+
+    def __eq__(x, y):
+        return x.__key() == y.__key()
+
+    def __hash__(self):
+        return hash(self.__key())
 
     def __str__(self):
         """
@@ -51,24 +60,31 @@ class GameState(object):
 
         return output
 
+    def turn(self):
+        """
+        Returns the player whose turn it is: 'X' or 'O'
+        """
+        num_X = 0
+        num_O = 0
+        for row in range(3):
+            for col in range(3):
+                if self.board[row][col] == 'X':
+                    num_X += 1
+                elif self.board[row][col] == 'O':
+                    num_O += 1
+        if num_X == num_O:
+            return 'X'
+        else:
+            return 'O'
+
     def move(self, row, col):
         """
         Places a marker at the position (row, col). The marker placed is
         determined by whose turn it is, either 'X' or 'O'.
         """
-        self.board[row][col] = self.turn
-
-        self._advance_turn()
-
-    def _advance_turn(self):
-        """
-        Marks the current player's turn as over and keeps track of whose turn
-        is next
-        """
-        if self.turn == 'X':
-            self.turn = 'O'
-        else:
-            self.turn = 'X'
+        print('Move: {} moves to ({}, {})'.format(self.turn(), row, col))
+        self.board[row][col] = self.turn()
+        print('{}'.format(self))
 
     def legal_moves(self):
         """
