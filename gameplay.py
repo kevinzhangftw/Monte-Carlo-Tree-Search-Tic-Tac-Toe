@@ -26,15 +26,16 @@ def play_game(player_policies):
 
     # Keep track of the game tree
     G = nx.DiGraph()
+    # Todo: use the newly implemented hashing method
     G.add_node(str(game))
     root = str(game)
     current = root
 
+    plies = 0
     while game.winner() is None:
-        plies = 0
         for player_policy in player_policies:
             plies += 1
-            print("\nPly #{}. It is {}'s move.".format(plies, game.turn))
+            print("\n================ ( Ply #{}. It is {}'s move. ) ================".format(plies, game.turn()))
 
             game.move(*player_policy.move(game))
 
@@ -43,11 +44,9 @@ def play_game(player_policies):
             current = str(game)
             G.add_edge(previous, current)
 
-            print('New game state:\n{}'.format(game))
-
             if game.winner() is not None:
                 break
 
     print('Game over. Winner is {}.'.format(game.winner()))
 
-    return G
+    return G, game.winner()
