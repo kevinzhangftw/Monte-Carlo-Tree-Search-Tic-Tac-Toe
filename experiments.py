@@ -6,6 +6,7 @@ The player policies can be chosen from MCTS and Random.
 
 from gameplay import play_game
 from policies import RandomPolicy, MCTSPolicy
+from visualization import visualize_mcts_tree
 import networkx as nx
 import numpy as np
 
@@ -89,10 +90,16 @@ def run_experiment(player_policies, experiment_name):
     plt.title('Experiment ID: {}'.format(name.replace('_', ' ').upper()))
 
     # Save figure to disk with a unique identifier
-    import uuid
     plt.savefig('{}.png'.format(experiment_name))
-    # plt.show()
     plt.cla()
+
+    # Save a visualization of the first n levels of
+    # the MCTS trees used by each player that used MCTS
+    for policy in player_policies:
+        if type(policy) is MCTSPolicy:
+            visualize_mcts_tree(mcts=policy,
+                                depth=0,
+                                filename='{}_{}'.format(name, policy.player))
 
     # # Analyze the opening moves (todo)
     # policy = player_policies[0]

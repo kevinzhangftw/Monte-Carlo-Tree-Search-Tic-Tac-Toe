@@ -8,6 +8,7 @@ import numpy as np
 import operator
 import networkx as nx
 import copy
+from gamestate import GameState
 
 EPSILON = 10e-6  # Prevents division by 0 in calculation of UCT
 
@@ -55,6 +56,15 @@ class MCTSPolicy(Policy):
         self.uct_c = np.sqrt(2)
 
         self.root = None
+
+        if player is 'O':
+            # We need the empty board and its children to be present in the digraph
+            # even if the player is 'O', so that the overall root will be present
+            empty_board = GameState()
+            self.digraph.add_node(empty_board, attr_dict={'w': 0, 'n': 0, 'expanded': False})
+            for successor in [empty_board.transition_function(*move) for move in empty_board.legal_moves()]:
+                self.digraph.add_node(successor, attr_dict={'w': 0, 'n': 0, 'expanded': False})
+                self.digraph.add_edge(empty_board, successor)
 
     def move(self, root):
         # Make a copy of the starting state so that the MCTS state can't be
