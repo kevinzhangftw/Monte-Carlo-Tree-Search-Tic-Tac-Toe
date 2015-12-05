@@ -35,12 +35,9 @@ names = ['x_mcts_vs_o_random_1',
          'x_random_vs_o_random_2']
 
 
-def run_experiment(player_policies, experiment_name):
+def run_experiment(player_policies, experiment_name, n):
     # For reproducibility
     np.random.seed(0)
-
-    # Number of games to play per experiment
-    n = 100
 
     games = []
     winners = []
@@ -90,7 +87,7 @@ def run_experiment(player_policies, experiment_name):
     plt.title('Experiment ID: {}'.format(name.replace('_', ' ').upper()))
 
     # Save figure to disk with a unique identifier
-    plt.savefig('{}.png'.format(experiment_name))
+    plt.savefig('simulation_time_' + str(simulation_time) + '_' + '{}.png'.format(experiment_name))
     plt.cla()
 
     # Save a visualization of the first n levels of
@@ -121,4 +118,7 @@ def run_experiment(player_policies, experiment_name):
     # dot_graph.write_png('multiple_game_graph_mcts_vs_random.png')
 
 for experiment, name in zip(experiments, names):
-    run_experiment(experiment, name)
+    # Different number of games to play per experiment
+    n = [10, 20, 50, 100, 150, 200]
+    for simulation_time in n:
+        run_experiment(experiment, name, simulation_time)
