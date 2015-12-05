@@ -35,6 +35,9 @@ names = ['x_mcts_vs_o_random_1',
 
 
 def run_experiment(player_policies, experiment_name):
+    # For reproducibility
+    np.random.seed(0)
+
     # Number of games to play per experiment
     n = 100
 

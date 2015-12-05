@@ -12,6 +12,7 @@ Anaconda
 from gameplay import play_game
 from policies import RandomPolicy, MCTSPolicy
 import networkx as nx
+import numpy as np
 
 # player_policies = [RandomPolicy(), RandomPolicy()]
 player_policies = [MCTSPolicy(player='X'), RandomPolicy()]
@@ -23,7 +24,8 @@ dot_graph.write_png('game_graph.png')
 
 games = []
 
-seed(0)
+# For reproducibility
+np.random.seed(0)
 
 for i in range(100):
     games.append(play_game(player_policies))
@@ -41,7 +43,6 @@ from gamestate import GameState
 overallroot = GameState()
 root = overallroot
 depth = 2
-
 subgraph = nx.DiGraph()
 
 
