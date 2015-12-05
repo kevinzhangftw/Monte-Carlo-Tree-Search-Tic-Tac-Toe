@@ -24,8 +24,10 @@ def visualize_mcts_tree(mcts, depth, filename):
     for node in dot_graph.get_nodes():
         attr = node.get_attributes()
         try:
-            node.set_label('{}{:.2f}'.format(node.get_name().replace('"', ''),
-                                             float(attr['w']) / float(attr['n'])))
+            node.set_label('{}{}/{}\n{:.2f}'.format(node.get_name().replace('"', ''),
+                                                    int(attr['w']),
+                                                    int(attr['n']),
+                                                    float(attr['uct'])))
         except KeyError:
             pass
 
@@ -44,4 +46,5 @@ def add_edges(graph, subgraph, parent, depth):
         for node in [parent, child]:
             subgraph.node[node]['n'] = graph.node[node]['n']
             subgraph.node[node]['w'] = graph.node[node]['w']
+            subgraph.node[node]['uct'] = graph.node[node]['uct']
         subgraph.add_edge(parent, child)

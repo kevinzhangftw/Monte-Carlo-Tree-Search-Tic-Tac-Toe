@@ -52,6 +52,7 @@ class MCTSPolicy(Policy):
         """
         self.digraph = nx.DiGraph()
         self.player = player
+        self.num_simulations = 0
         # Constant parameter to weight exploration vs. exploitation for UCT
         self.uct_c = np.sqrt(2)
 
@@ -61,9 +62,9 @@ class MCTSPolicy(Policy):
             # We need the empty board and its children to be present in the digraph
             # even if the player is 'O', so that the overall root will be present
             empty_board = GameState()
-            self.digraph.add_node(empty_board, attr_dict={'w': 0, 'n': 0, 'expanded': False})
+            self.digraph.add_node(empty_board, attr_dict={'w': 0, 'n': 0, 'uct': 0, 'expanded': False})
             for successor in [empty_board.transition_function(*move) for move in empty_board.legal_moves()]:
-                self.digraph.add_node(successor, attr_dict={'w': 0, 'n': 0, 'expanded': False})
+                self.digraph.add_node(successor, attr_dict={'w': 0, 'n': 0, 'uct': 0, 'expanded': False})
                 self.digraph.add_edge(empty_board, successor)
 
     def move(self, root):
@@ -74,6 +75,8 @@ class MCTSPolicy(Policy):
 
         computational_budget = 25
         for i in range(computational_budget):
+            self.num_simulations += 1
+
             print("Running MCTS from this starting state:\n{}".format(root))
 
             # Keep track of the path so that we can do backpropagation later
@@ -139,7 +142,7 @@ class MCTSPolicy(Policy):
         """
         # In the case that the root node is not in the graph, add it
         if root not in self.digraph.nodes():
-            self.digraph.add_node(root, attr_dict={'w': 0, 'n': 0, 'expanded': False})
+            self.digraph.add_node(root, attr_dict={'w': 0, 'n': 0, 'uct': 0, 'expanded': False})
             return root
         elif not self.digraph.node[root]['expanded']:
             print('root in digraph but not expanded')
@@ -150,7 +153,7 @@ class MCTSPolicy(Policy):
             children = self.digraph.successors(root)
             uct_values = {}
             for child_node in children:
-                uct_values[child_node] = self.uct(state=child_node, parent_state=root)
+                uct_values[child_node] = self.uct(state=child_node)
 
             # Choose the child node that maximizes the expected value given by UCT
             best_child_node = max(uct_values.items(), key=operator.itemgetter(1))[0]
@@ -179,7 +182,7 @@ class MCTSPolicy(Policy):
             idx = np.random.randint(len(unvisited_children))
             child, move = unvisited_children[idx], corresponding_actions[idx]
 
-            self.digraph.add_node(child, attr_dict={'w': 0, 'n': 0, 'expanded': False})
+            self.digraph.add_node(child, attr_dict={'w': 0, 'n': 0, 'uct': 0, 'expanded': False})
             self.digraph.add_edge(node, child, attr_dict={'action': move})
 
         # If all legal moves are now children, mark this node as expanded.
@@ -223,14 +226,14 @@ class MCTSPolicy(Policy):
             except IndexError:
                 break
 
-    def uct(self, state, parent_state):
+    def uct(self, state):
         """
         Returns the expected value of a state, calculated as a weighted sum of
         its exploitation value and exploration value
         """
         n = self.digraph.node[state]['n']  # Number of plays from this node
         w = self.digraph.node[state]['w']  # Number of wins from this node
-        t = self.digraph.node[parent_state]['n']  # Total number of plays from parent node
+        t = self.num_simulations
         c = self.uct_c
         epsilon = EPSILON
 
@@ -240,5 +243,7 @@ class MCTSPolicy(Policy):
         value = exploitation_value + exploration_value
 
         print('UCT value {:.3f} for state:\n{}'.format(value, state))
+
+        self.digraph.node[state]['uct'] = value
 
         return value
