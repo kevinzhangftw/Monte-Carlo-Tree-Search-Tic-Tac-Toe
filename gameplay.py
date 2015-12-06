@@ -6,6 +6,7 @@ Requires the NetworkX graph package, which is included in Anaconda
 """
 import networkx as nx
 from gamestate import GameState
+from policies import MCTSPolicy
 
 
 class StateNode(object):
@@ -32,6 +33,12 @@ def play_game(player_policies):
     current = root
 
     plies = 0
+
+    # Inform the player policies that a new game is starting (so they can reset their current move pointers)
+    for player_policy in player_policies:
+        if type(player_policy) is MCTSPolicy:
+            player_policy.reset_game()
+
     while game.winner() is None:
         for player_policy in player_policies:
             plies += 1

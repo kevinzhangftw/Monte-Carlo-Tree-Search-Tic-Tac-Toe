@@ -36,9 +36,6 @@ names = ['x_mcts_vs_o_random_1',
 
 
 def run_experiment(player_policies, experiment_name, n):
-    # For reproducibility
-    np.random.seed(0)
-
     games = []
     winners = []
     X_wins = np.zeros(n)
@@ -72,11 +69,6 @@ def run_experiment(player_policies, experiment_name, n):
 
     from matplotlib import pyplot as plt
 
-    # Plot cumulative win count over time
-    # plt.plot(X_wins)
-    # plt.plot(O_wins)
-    # plt.legend(['X wins', 'O wins'])
-
     # Plot cumulative win rate over time
     plt.plot(X_win_rate)
     plt.plot(O_win_rate)
@@ -96,29 +88,20 @@ def run_experiment(player_policies, experiment_name, n):
         if type(policy) is MCTSPolicy:
             visualize_mcts_tree(mcts=policy,
                                 depth=0,
-                                filename='{}_{}'.format(name, policy.player))
+                                filename='{}_{}_{}'.format(name, policy.player, n))
 
-    # # Analyze the opening moves (todo)
-    # policy = player_policies[0]
-    # from gamestate import GameState
-    # opening_moves = policy.digraph.successors(GameState())
-    #
-    # for node in opening_moves:
-    #     print('=======================')
-    #     print(node)
-    #     print('{} / {} = {}'.format(policy.digraph.node[node]['w'],
-    #                                 policy.digraph.node[node]['n'],
-    #                                 policy.digraph.node[node]['w'] / policy.digraph.node[node]['n']))
-    #     print()
 
-    # Generate visual game trees
-    # dot_graph_combined = nx.compose_all(games)
-    # dot_graph = nx.to_pydot(dot_graph_combined)
-    # dot_graph.set_graph_defaults(fontname='Courier')
-    # dot_graph.write_png('multiple_game_graph_mcts_vs_random.png')
-
+seed = 0
 for experiment, name in zip(experiments, names):
+    # For reproducibility, we seed the PRNG
+    # Note: we use one seed per experiment, so that the different length runs start at the same seed
+    # We also change the seed for each experiment, so that we can run multiple tries of an experiment
+    # and have them produce different results
+    np.random.seed(seed)
+
     # Different number of games to play per experiment
     n = [10, 20, 50, 100, 150, 200]
     for simulation_time in n:
         run_experiment(experiment, name, simulation_time)
+
+    seed += 1
