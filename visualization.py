@@ -4,7 +4,6 @@ Visualizes game trees to a selected depth with node value estimate annotations.
 Requires the NetworkX graph package and GraphViz, which are included in Anaconda
 """
 import networkx as nx
-from gamestate import GameState
 
 
 def visualize_mcts_tree(mcts, depth, filename):
@@ -13,21 +12,26 @@ def visualize_mcts_tree(mcts, depth, filename):
     number of levels equal to 2 + depth labelled with the
     MCTS values from mcts and saves it as filename.png
     """
-    root = GameState()
+    # Find root of the MCTS tree
+    mcts_root = nx.topological_sort(mcts.digraph)[0]
+    # root = GameState()
     subgraph = nx.DiGraph()
 
     # Don't include the empty board (the root) in the graphs
-    for first_move in mcts.digraph.successors(root):
+    # for first_move in mcts.digraph.successors(root):
+    print(mcts_root)
+    print(type(mcts_root))
+    for first_move in mcts.digraph.successors(mcts_root):
         add_edges(mcts.digraph, subgraph, first_move, depth)
 
     dot_graph = nx.to_pydot(subgraph)
     for node in dot_graph.get_nodes():
         attr = node.get_attributes()
         try:
-            node.set_label('{}{}/{}\n{:.2f}'.format(node.get_name().replace('"', ''),
-                                                    int(attr['w']),
-                                                    int(attr['n']),
-                                                    float(attr['uct'])))
+            node.set_label('{}{}/{}\n{:.2f}'.format(attr['state'],
+                                                   int(attr['w']),
+                                                   int(attr['n']),
+                                                   float(attr['uct'])))
         except KeyError:
             pass
 
@@ -47,4 +51,5 @@ def add_edges(graph, subgraph, parent, depth):
             subgraph.node[node]['n'] = graph.node[node]['n']
             subgraph.node[node]['w'] = graph.node[node]['w']
             subgraph.node[node]['uct'] = graph.node[node]['uct']
+            subgraph.node[node]['state'] = graph.node[node]['state']
         subgraph.add_edge(parent, child)
