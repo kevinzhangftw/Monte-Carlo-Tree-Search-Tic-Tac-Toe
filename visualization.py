@@ -23,8 +23,8 @@ def visualize_mcts_tree(mcts, depth, filename):
     print(type(mcts_root))
     for first_move in mcts.digraph.successors(mcts_root):
         add_edges(mcts.digraph, subgraph, first_move, depth)
-
-    dot_graph = nx.to_pydot(subgraph)
+        dot_graph = nx.drawing.nx_pydot.to_pydot(subgraph)
+    # dot_graph = nx.to_pydot(subgraph)
     for node in dot_graph.get_nodes():
         attr = node.get_attributes()
         try:
