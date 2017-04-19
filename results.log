@@ -1,0 +1,9971 @@
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+
+================ ( Ply #1. It is X's move. ) ================
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+unvisited children: 9
+Node chosen for expansion:
+1
+================ ( simulation ) ================
+Move: O moves to (0, 0)
+O~~
+~~X
+~~~
+
+Move: X moves to (1, 1)
+O~~
+~XX
+~~~
+
+Move: O moves to (2, 0)
+O~~
+~XX
+O~~
+
+Move: X moves to (2, 1)
+O~~
+~XX
+OX~
+
+Move: O moves to (2, 2)
+O~~
+~XX
+OXO
+
+Move: X moves to (0, 2)
+O~X
+~XX
+OXO
+
+Move: O moves to (1, 0)
+O~X
+OXX
+OXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~~
+~~X
+~~~
+
+Updating to n=1 and w=0:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+unvisited children: 8
+Node chosen for expansion:
+2
+================ ( simulation ) ================
+Move: O moves to (0, 2)
+~~O
+~~~
+X~~
+
+Move: X moves to (1, 2)
+~~O
+~~X
+X~~
+
+Move: O moves to (0, 0)
+O~O
+~~X
+X~~
+
+Move: X moves to (0, 1)
+OXO
+~~X
+X~~
+
+Move: O moves to (1, 0)
+OXO
+O~X
+X~~
+
+Move: X moves to (2, 2)
+OXO
+O~X
+X~X
+
+Move: O moves to (2, 1)
+OXO
+O~X
+XOX
+
+Move: X moves to (1, 1)
+OXO
+OXX
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~~
+~~~
+X~~
+
+Updating to n=2 and w=0:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+unvisited children: 7
+Node chosen for expansion:
+3
+================ ( simulation ) ================
+Move: O moves to (2, 1)
+~~~
+~~~
+~OX
+
+Move: X moves to (2, 0)
+~~~
+~~~
+XOX
+
+Move: O moves to (0, 0)
+O~~
+~~~
+XOX
+
+Move: X moves to (0, 2)
+O~X
+~~~
+XOX
+
+Move: O moves to (1, 0)
+O~X
+O~~
+XOX
+
+Move: X moves to (1, 1)
+O~X
+OX~
+XOX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~~
+~~~
+~~X
+
+Updating to n=3 and w=1:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+unvisited children: 6
+Node chosen for expansion:
+4
+================ ( simulation ) ================
+Move: O moves to (0, 0)
+O~~
+~~~
+~X~
+
+Move: X moves to (0, 2)
+O~X
+~~~
+~X~
+
+Move: O moves to (2, 0)
+O~X
+~~~
+OX~
+
+Move: X moves to (1, 2)
+O~X
+~~X
+OX~
+
+Move: O moves to (0, 1)
+OOX
+~~X
+OX~
+
+Move: X moves to (1, 1)
+OOX
+~XX
+OX~
+
+Move: O moves to (1, 0)
+OOX
+OXX
+OX~
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~~
+~~~
+~X~
+
+Updating to n=4 and w=1:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+unvisited children: 5
+Node chosen for expansion:
+5
+================ ( simulation ) ================
+Move: O moves to (1, 0)
+X~~
+O~~
+~~~
+
+Move: X moves to (1, 2)
+X~~
+O~X
+~~~
+
+Move: O moves to (0, 1)
+XO~
+O~X
+~~~
+
+Move: X moves to (1, 1)
+XO~
+OXX
+~~~
+
+Move: O moves to (2, 2)
+XO~
+OXX
+~~O
+
+Move: X moves to (2, 0)
+XO~
+OXX
+X~O
+
+Move: O moves to (2, 1)
+XO~
+OXX
+XOO
+
+Move: X moves to (0, 2)
+XOX
+OXX
+XOO
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+X~~
+~~~
+~~~
+
+Updating to n=5 and w=2:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+unvisited children: 4
+Node chosen for expansion:
+6
+================ ( simulation ) ================
+Move: O moves to (2, 1)
+~~~
+~X~
+~O~
+
+Move: X moves to (0, 0)
+X~~
+~X~
+~O~
+
+Move: O moves to (0, 2)
+X~O
+~X~
+~O~
+
+Move: X moves to (1, 0)
+X~O
+XX~
+~O~
+
+Move: O moves to (1, 2)
+X~O
+XXO
+~O~
+
+Move: X moves to (0, 1)
+XXO
+XXO
+~O~
+
+Move: O moves to (2, 2)
+XXO
+XXO
+~OO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~~
+~X~
+~~~
+
+Updating to n=6 and w=2:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+unvisited children: 3
+Node chosen for expansion:
+7
+================ ( simulation ) ================
+Move: O moves to (1, 2)
+~~~
+X~O
+~~~
+
+Move: X moves to (1, 1)
+~~~
+XXO
+~~~
+
+Move: O moves to (2, 0)
+~~~
+XXO
+O~~
+
+Move: X moves to (0, 2)
+~~X
+XXO
+O~~
+
+Move: O moves to (2, 2)
+~~X
+XXO
+O~O
+
+Move: X moves to (0, 0)
+X~X
+XXO
+O~O
+
+Move: O moves to (0, 1)
+XOX
+XXO
+O~O
+
+Move: X moves to (2, 1)
+XOX
+XXO
+OXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~~
+X~~
+~~~
+
+Updating to n=7 and w=2:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+unvisited children: 2
+Node chosen for expansion:
+8
+================ ( simulation ) ================
+Move: O moves to (0, 0)
+OX~
+~~~
+~~~
+
+Move: X moves to (2, 0)
+OX~
+~~~
+X~~
+
+Move: O moves to (2, 2)
+OX~
+~~~
+X~O
+
+Move: X moves to (0, 2)
+OXX
+~~~
+X~O
+
+Move: O moves to (1, 0)
+OXX
+O~~
+X~O
+
+Move: X moves to (1, 2)
+OXX
+O~X
+X~O
+
+Move: O moves to (2, 1)
+OXX
+O~X
+XOO
+
+Move: X moves to (1, 1)
+OXX
+OXX
+XOO
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~X~
+~~~
+~~~
+
+Updating to n=8 and w=3:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~X~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~~
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: X moves to (1, 1)
+~~~
+~X~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~~
+~~X
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~~
+~~~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~~
+~~~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~~
+~~~
+~~X
+
+unvisited children: 1
+node is expanded
+Node chosen for expansion:
+9
+================ ( simulation ) ================
+Move: O moves to (1, 2)
+~~X
+~~O
+~~~
+
+Move: X moves to (0, 1)
+~XX
+~~O
+~~~
+
+Move: O moves to (1, 1)
+~XX
+~OO
+~~~
+
+Move: X moves to (2, 0)
+~XX
+~OO
+X~~
+
+Move: O moves to (2, 2)
+~XX
+~OO
+X~O
+
+Move: X moves to (0, 0)
+XXX
+~OO
+X~O
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+~~~
+~~~
+
+Updating to n=9 and w=4:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.14595529654
+UCT value 2.146 for state:
+1
+exploration_value: 2.14595529654
+UCT value 2.146 for state:
+2
+exploration_value: 2.14595529654
+UCT value 3.146 for state:
+3
+exploration_value: 2.14595529654
+UCT value 2.146 for state:
+4
+exploration_value: 2.14595529654
+UCT value 3.146 for state:
+5
+exploration_value: 2.14595529654
+UCT value 2.146 for state:
+6
+exploration_value: 2.14595529654
+UCT value 2.146 for state:
+7
+exploration_value: 2.14595529654
+UCT value 3.146 for state:
+8
+exploration_value: 2.14595529654
+UCT value 3.146 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+~~~
+~~X
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+~~~
+~~X
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+~~~
+~~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~~
+O~~
+~~X
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~~
+~O~
+~~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~~
+~~O
+~~X
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~~
+~~~
+O~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~~
+~~~
+~OX
+
+unvisited children: 8
+Node chosen for expansion:
+10
+================ ( simulation ) ================
+Move: X moves to (0, 2)
+~OX
+~~~
+~~X
+
+Move: O moves to (1, 0)
+~OX
+O~~
+~~X
+
+Move: X moves to (1, 1)
+~OX
+OX~
+~~X
+
+Move: O moves to (2, 1)
+~OX
+OX~
+~OX
+
+Move: X moves to (2, 0)
+~OX
+OX~
+XOX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~O~
+~~~
+~~X
+
+Updating to n=2 and w=2:
+~~~
+~~~
+~~X
+
+Updating to n=10 and w=5:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.18991839761
+UCT value 2.190 for state:
+1
+exploration_value: 2.18991839761
+UCT value 2.190 for state:
+2
+exploration_value: 1.54851002043
+UCT value 2.549 for state:
+3
+exploration_value: 2.18991839761
+UCT value 2.190 for state:
+4
+exploration_value: 2.18991839761
+UCT value 3.190 for state:
+5
+exploration_value: 2.18991839761
+UCT value 2.190 for state:
+6
+exploration_value: 2.18991839761
+UCT value 2.190 for state:
+7
+exploration_value: 2.18991839761
+UCT value 3.190 for state:
+8
+exploration_value: 2.18991839761
+UCT value 3.190 for state:
+9
+root in digraph but not expanded
+selected:
+X~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+XO~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+X~O
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+X~~
+O~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+X~~
+~O~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+X~~
+~~O
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+X~~
+~~~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+X~~
+~~~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+X~~
+~~~
+~~O
+
+unvisited children: 8
+Node chosen for expansion:
+11
+================ ( simulation ) ================
+Move: X moves to (1, 1)
+X~~
+~X~
+~~O
+
+Move: O moves to (1, 0)
+X~~
+OX~
+~~O
+
+Move: X moves to (2, 0)
+X~~
+OX~
+X~O
+
+Move: O moves to (0, 1)
+XO~
+OX~
+X~O
+
+Move: X moves to (2, 1)
+XO~
+OX~
+XXO
+
+Move: O moves to (1, 2)
+XO~
+OXO
+XXO
+
+Move: X moves to (0, 2)
+XOX
+OXO
+XXO
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+X~~
+~~~
+~~O
+
+Updating to n=2 and w=2:
+X~~
+~~~
+~~~
+
+Updating to n=11 and w=6:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.22929666082
+UCT value 2.229 for state:
+1
+exploration_value: 2.22929666082
+UCT value 2.229 for state:
+2
+exploration_value: 1.57635472699
+UCT value 2.576 for state:
+3
+exploration_value: 2.22929666082
+UCT value 2.229 for state:
+4
+exploration_value: 1.57635472699
+UCT value 2.576 for state:
+5
+exploration_value: 2.22929666082
+UCT value 2.229 for state:
+6
+exploration_value: 2.22929666082
+UCT value 2.229 for state:
+7
+exploration_value: 2.22929666082
+UCT value 3.229 for state:
+8
+exploration_value: 2.22929666082
+UCT value 3.229 for state:
+9
+root in digraph but not expanded
+selected:
+~X~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+OX~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~XO
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~X~
+O~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~X~
+~O~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~X~
+~~O
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~X~
+~~~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~X~
+~~~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~X~
+~~~
+~~O
+
+unvisited children: 8
+Node chosen for expansion:
+12
+================ ( simulation ) ================
+Move: X moves to (1, 2)
+~X~
+~~X
+O~~
+
+Move: O moves to (0, 2)
+~XO
+~~X
+O~~
+
+Move: X moves to (1, 1)
+~XO
+~XX
+O~~
+
+Move: O moves to (0, 0)
+OXO
+~XX
+O~~
+
+Move: X moves to (1, 0)
+OXO
+XXX
+O~~
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~X~
+~~~
+O~~
+
+Updating to n=2 and w=2:
+~X~
+~~~
+~~~
+
+Updating to n=12 and w=7:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.26491664669
+UCT value 2.265 for state:
+1
+exploration_value: 2.26491664669
+UCT value 2.265 for state:
+2
+exploration_value: 1.60154192352
+UCT value 2.602 for state:
+3
+exploration_value: 2.26491664669
+UCT value 2.265 for state:
+4
+exploration_value: 1.60154192352
+UCT value 2.602 for state:
+5
+exploration_value: 2.26491664669
+UCT value 2.265 for state:
+6
+exploration_value: 2.26491664669
+UCT value 2.265 for state:
+7
+exploration_value: 1.60154192352
+UCT value 2.602 for state:
+8
+exploration_value: 2.26491664669
+UCT value 3.265 for state:
+9
+root in digraph but not expanded
+selected:
+~~X
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+O~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~X
+~O~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+~~O
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+~~~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~~~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+~~~
+~~O
+
+unvisited children: 8
+Node chosen for expansion:
+13
+================ ( simulation ) ================
+Move: X moves to (1, 2)
+~~X
+~~X
+~O~
+
+Move: O moves to (2, 0)
+~~X
+~~X
+OO~
+
+Move: X moves to (1, 1)
+~~X
+~XX
+OO~
+
+Move: O moves to (0, 0)
+O~X
+~XX
+OO~
+
+Move: X moves to (0, 1)
+OXX
+~XX
+OO~
+
+Move: O moves to (1, 0)
+OXX
+OXX
+OO~
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~X
+~~~
+~O~
+
+Updating to n=2 and w=1:
+~~X
+~~~
+~~~
+
+Updating to n=13 and w=7:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.29740329037
+UCT value 2.297 for state:
+1
+exploration_value: 2.29740329037
+UCT value 2.297 for state:
+2
+exploration_value: 1.62451350699
+UCT value 2.625 for state:
+3
+exploration_value: 2.29740329037
+UCT value 2.297 for state:
+4
+exploration_value: 1.62451350699
+UCT value 2.625 for state:
+5
+exploration_value: 2.29740329037
+UCT value 2.297 for state:
+6
+exploration_value: 2.29740329037
+UCT value 2.297 for state:
+7
+exploration_value: 1.62451350699
+UCT value 2.625 for state:
+8
+exploration_value: 1.62451350699
+UCT value 2.125 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+~~~
+~~X
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+~~~
+~~X
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+~~~
+~~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~~
+O~~
+~~X
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~~
+~O~
+~~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~~
+~~O
+~~X
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~~
+~~~
+O~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~~
+~~~
+~OX
+
+unvisited children: 7
+Node chosen for expansion:
+14
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+O~~
+~~~
+~XX
+
+Move: O moves to (1, 2)
+O~~
+~~O
+~XX
+
+Move: X moves to (1, 1)
+O~~
+~XO
+~XX
+
+Move: O moves to (1, 0)
+O~~
+OXO
+~XX
+
+Move: X moves to (0, 2)
+O~X
+OXO
+~XX
+
+Move: O moves to (2, 0)
+O~X
+OXO
+OXX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~~
+~~~
+~~X
+
+Updating to n=3 and w=2:
+~~~
+~~~
+~~X
+
+Updating to n=14 and w=7:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.32724004816
+UCT value 2.327 for state:
+1
+exploration_value: 2.32724004816
+UCT value 2.327 for state:
+2
+exploration_value: 1.34363714703
+UCT value 2.010 for state:
+3
+exploration_value: 2.32724004816
+UCT value 2.327 for state:
+4
+exploration_value: 1.64561133349
+UCT value 2.646 for state:
+5
+exploration_value: 2.32724004816
+UCT value 2.327 for state:
+6
+exploration_value: 2.32724004816
+UCT value 2.327 for state:
+7
+exploration_value: 1.64561133349
+UCT value 2.646 for state:
+8
+exploration_value: 1.64561133349
+UCT value 2.146 for state:
+9
+root in digraph but not expanded
+selected:
+X~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+XO~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+X~O
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+X~~
+O~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+X~~
+~O~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+X~~
+~~O
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+X~~
+~~~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+X~~
+~~~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+X~~
+~~~
+~~O
+
+unvisited children: 7
+Node chosen for expansion:
+15
+================ ( simulation ) ================
+Move: X moves to (0, 1)
+XX~
+~~~
+O~~
+
+Move: O moves to (1, 0)
+XX~
+O~~
+O~~
+
+Move: X moves to (1, 1)
+XX~
+OX~
+O~~
+
+Move: O moves to (2, 2)
+XX~
+OX~
+O~O
+
+Move: X moves to (0, 2)
+XXX
+OX~
+O~O
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+X~~
+~~~
+O~~
+
+Updating to n=3 and w=3:
+X~~
+~~~
+~~~
+
+Updating to n=15 and w=8:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.35480827102
+UCT value 2.355 for state:
+1
+exploration_value: 2.35480827102
+UCT value 2.355 for state:
+2
+exploration_value: 1.35955372097
+UCT value 2.026 for state:
+3
+exploration_value: 2.35480827102
+UCT value 2.355 for state:
+4
+exploration_value: 1.35955372097
+UCT value 2.360 for state:
+5
+exploration_value: 2.35480827102
+UCT value 2.355 for state:
+6
+exploration_value: 2.35480827102
+UCT value 2.355 for state:
+7
+exploration_value: 1.66510505956
+UCT value 2.665 for state:
+8
+exploration_value: 1.66510505956
+UCT value 2.165 for state:
+9
+root in digraph but not expanded
+selected:
+~X~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+OX~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~XO
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~X~
+O~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~X~
+~O~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~X~
+~~O
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~X~
+~~~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~X~
+~~~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~X~
+~~~
+~~O
+
+unvisited children: 7
+Node chosen for expansion:
+16
+================ ( simulation ) ================
+Move: X moves to (2, 2)
+~X~
+~~~
+~OX
+
+Move: O moves to (0, 0)
+OX~
+~~~
+~OX
+
+Move: X moves to (1, 0)
+OX~
+X~~
+~OX
+
+Move: O moves to (1, 2)
+OX~
+X~O
+~OX
+
+Move: X moves to (0, 2)
+OXX
+X~O
+~OX
+
+Move: O moves to (1, 1)
+OXX
+XOO
+~OX
+
+Move: X moves to (2, 0)
+OXX
+XOO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~X~
+~~~
+~O~
+
+Updating to n=3 and w=2:
+~X~
+~~~
+~~~
+
+Updating to n=16 and w=8:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.3804138347
+UCT value 2.380 for state:
+1
+exploration_value: 2.3804138347
+UCT value 2.380 for state:
+2
+exploration_value: 1.37433714933
+UCT value 2.041 for state:
+3
+exploration_value: 2.3804138347
+UCT value 2.380 for state:
+4
+exploration_value: 1.37433714933
+UCT value 2.374 for state:
+5
+exploration_value: 2.3804138347
+UCT value 2.380 for state:
+6
+exploration_value: 2.3804138347
+UCT value 2.380 for state:
+7
+exploration_value: 1.37433714933
+UCT value 2.041 for state:
+8
+exploration_value: 1.68321097253
+UCT value 2.183 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+~~X
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+~~X
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+~~X
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+~~X
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~~
+O~X
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~~
+~OX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~~
+~~X
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~~
+~~X
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~~
+~~X
+~~O
+
+unvisited children: 8
+Node chosen for expansion:
+17
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+O~~
+~~X
+~X~
+
+Move: O moves to (1, 1)
+O~~
+~OX
+~X~
+
+Move: X moves to (1, 0)
+O~~
+XOX
+~X~
+
+Move: O moves to (2, 0)
+O~~
+XOX
+OX~
+
+Move: X moves to (0, 2)
+O~X
+XOX
+OX~
+
+Move: O moves to (0, 1)
+OOX
+XOX
+OX~
+
+Move: X moves to (2, 2)
+OOX
+XOX
+OXX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+O~~
+~~X
+~~~
+
+Updating to n=2 and w=1:
+~~~
+~~X
+~~~
+
+Updating to n=17 and w=9:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.70010508678
+UCT value 2.200 for state:
+1
+exploration_value: 2.40430566046
+UCT value 2.404 for state:
+2
+exploration_value: 1.38813114735
+UCT value 2.055 for state:
+3
+exploration_value: 2.40430566046
+UCT value 2.404 for state:
+4
+exploration_value: 1.38813114735
+UCT value 2.388 for state:
+5
+exploration_value: 2.40430566046
+UCT value 2.404 for state:
+6
+exploration_value: 2.40430566046
+UCT value 2.404 for state:
+7
+exploration_value: 1.38813114735
+UCT value 2.055 for state:
+8
+exploration_value: 1.70010508678
+UCT value 2.200 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+~~~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+~~~
+X~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+~~~
+X~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+~~~
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~~
+O~~
+X~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~~
+~O~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~~
+~~O
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~~
+~~~
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~~
+~~~
+X~O
+
+unvisited children: 8
+Node chosen for expansion:
+18
+================ ( simulation ) ================
+Move: X moves to (1, 2)
+~~~
+~~X
+X~O
+
+Move: O moves to (0, 1)
+~O~
+~~X
+X~O
+
+Move: X moves to (0, 0)
+XO~
+~~X
+X~O
+
+Move: O moves to (1, 1)
+XO~
+~OX
+X~O
+
+Move: X moves to (2, 1)
+XO~
+~OX
+XXO
+
+Move: O moves to (1, 0)
+XO~
+OOX
+XXO
+
+Move: X moves to (0, 2)
+XOX
+OOX
+XXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~~
+~~~
+X~O
+
+Updating to n=2 and w=0:
+~~~
+~~~
+X~~
+
+Updating to n=18 and w=9:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.7159324745
+UCT value 2.216 for state:
+1
+exploration_value: 1.7159324745
+UCT value 1.716 for state:
+2
+exploration_value: 1.40105416607
+UCT value 2.068 for state:
+3
+exploration_value: 2.42668891087
+UCT value 2.427 for state:
+4
+exploration_value: 1.40105416607
+UCT value 2.401 for state:
+5
+exploration_value: 2.42668891087
+UCT value 2.427 for state:
+6
+exploration_value: 2.42668891087
+UCT value 2.427 for state:
+7
+exploration_value: 1.40105416607
+UCT value 2.068 for state:
+8
+exploration_value: 1.7159324745
+UCT value 2.216 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~X~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+~~~
+~X~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+~~~
+~X~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+~~~
+~X~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~~
+O~~
+~X~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~~
+~O~
+~X~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~~
+~~O
+~X~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~~
+~~~
+OX~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~~
+~~~
+~XO
+
+unvisited children: 8
+Node chosen for expansion:
+19
+================ ( simulation ) ================
+Move: X moves to (1, 1)
+~~O
+~X~
+~X~
+
+Move: O moves to (1, 0)
+~~O
+OX~
+~X~
+
+Move: X moves to (0, 1)
+~XO
+OX~
+~X~
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~O
+~~~
+~X~
+
+Updating to n=2 and w=1:
+~~~
+~~~
+~X~
+
+Updating to n=19 and w=10:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.73081405557
+UCT value 2.231 for state:
+1
+exploration_value: 1.73081405557
+UCT value 1.731 for state:
+2
+exploration_value: 1.41320493626
+UCT value 2.080 for state:
+3
+exploration_value: 1.73081405557
+UCT value 2.231 for state:
+4
+exploration_value: 1.41320493626
+UCT value 2.413 for state:
+5
+exploration_value: 2.44773459204
+UCT value 2.448 for state:
+6
+exploration_value: 2.44773459204
+UCT value 2.448 for state:
+7
+exploration_value: 1.41320493626
+UCT value 2.080 for state:
+8
+exploration_value: 1.73081405557
+UCT value 2.231 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+~X~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+~X~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+~X~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+~X~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~~
+OX~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~~
+~XO
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~~
+~X~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~~
+~X~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~~
+~X~
+~~O
+
+unvisited children: 8
+Node chosen for expansion:
+20
+================ ( simulation ) ================
+Move: X moves to (2, 2)
+~~O
+~X~
+~~X
+
+Move: O moves to (1, 2)
+~~O
+~XO
+~~X
+
+Move: X moves to (2, 0)
+~~O
+~XO
+X~X
+
+Move: O moves to (2, 1)
+~~O
+~XO
+XOX
+
+Move: X moves to (1, 0)
+~~O
+XXO
+XOX
+
+Move: O moves to (0, 0)
+O~O
+XXO
+XOX
+
+Move: X moves to (0, 1)
+OXO
+XXO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~O
+~X~
+~~~
+
+Updating to n=2 and w=0:
+~~~
+~X~
+~~~
+
+Updating to n=20 and w=10:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.74485163128
+UCT value 2.245 for state:
+1
+exploration_value: 1.74485163128
+UCT value 1.745 for state:
+2
+exploration_value: 1.42466657838
+UCT value 2.091 for state:
+3
+exploration_value: 1.74485163128
+UCT value 2.245 for state:
+4
+exploration_value: 1.42466657838
+UCT value 2.425 for state:
+5
+exploration_value: 1.74485163128
+UCT value 1.745 for state:
+6
+exploration_value: 2.46758667236
+UCT value 2.468 for state:
+7
+exploration_value: 1.42466657838
+UCT value 2.091 for state:
+8
+exploration_value: 1.74485163128
+UCT value 2.245 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+X~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+X~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+X~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~~
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~~
+X~O
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~~
+X~~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~~
+X~~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~~
+X~~
+~~O
+
+unvisited children: 8
+Node chosen for expansion:
+21
+================ ( simulation ) ================
+Move: X moves to (2, 0)
+~~~
+XO~
+X~~
+
+Move: O moves to (0, 1)
+~O~
+XO~
+X~~
+
+Move: X moves to (1, 2)
+~O~
+XOX
+X~~
+
+Move: O moves to (2, 2)
+~O~
+XOX
+X~O
+
+Move: X moves to (2, 1)
+~O~
+XOX
+XXO
+
+Move: O moves to (0, 2)
+~OO
+XOX
+XXO
+
+Move: X moves to (0, 0)
+XOO
+XOX
+XXO
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~~
+XO~
+~~~
+
+Updating to n=2 and w=1:
+~~~
+X~~
+~~~
+
+Updating to n=21 and w=11:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.75813167829
+UCT value 2.258 for state:
+1
+exploration_value: 1.75813167829
+UCT value 1.758 for state:
+2
+exploration_value: 1.4355097004
+UCT value 2.102 for state:
+3
+exploration_value: 1.75813167829
+UCT value 2.258 for state:
+4
+exploration_value: 1.4355097004
+UCT value 2.436 for state:
+5
+exploration_value: 1.75813167829
+UCT value 1.758 for state:
+6
+exploration_value: 1.75813167829
+UCT value 2.258 for state:
+7
+exploration_value: 1.4355097004
+UCT value 2.102 for state:
+8
+exploration_value: 1.75813167829
+UCT value 2.258 for state:
+9
+root in digraph but not expanded
+selected:
+X~~
+~~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+XO~
+~~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+X~O
+~~~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+X~~
+O~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+X~~
+~O~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+X~~
+~~O
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+X~~
+~~~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+X~~
+~~~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+X~~
+~~~
+~~O
+
+unvisited children: 6
+Node chosen for expansion:
+22
+================ ( simulation ) ================
+Move: X moves to (0, 2)
+X~X
+O~~
+~~~
+
+Move: O moves to (2, 1)
+X~X
+O~~
+~O~
+
+Move: X moves to (1, 2)
+X~X
+O~X
+~O~
+
+Move: O moves to (2, 0)
+X~X
+O~X
+OO~
+
+Move: X moves to (0, 1)
+XXX
+O~X
+OO~
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+X~~
+O~~
+~~~
+
+Updating to n=4 and w=4:
+X~~
+~~~
+~~~
+
+Updating to n=22 and w=12:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.7707282509
+UCT value 2.271 for state:
+1
+exploration_value: 1.7707282509
+UCT value 1.771 for state:
+2
+exploration_value: 1.44579476744
+UCT value 2.112 for state:
+3
+exploration_value: 1.7707282509
+UCT value 2.271 for state:
+4
+exploration_value: 1.25209551896
+UCT value 2.252 for state:
+5
+exploration_value: 1.7707282509
+UCT value 1.771 for state:
+6
+exploration_value: 1.7707282509
+UCT value 2.271 for state:
+7
+exploration_value: 1.44579476744
+UCT value 2.112 for state:
+8
+exploration_value: 1.7707282509
+UCT value 2.271 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+~~X
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+~~X
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+~~X
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+~~X
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~~
+O~X
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~~
+~OX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~~
+~~X
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~~
+~~X
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~~
+~~X
+~~O
+
+unvisited children: 7
+Node chosen for expansion:
+23
+================ ( simulation ) ================
+Move: X moves to (0, 2)
+~~X
+~OX
+~~~
+
+Move: O moves to (2, 0)
+~~X
+~OX
+O~~
+
+Move: X moves to (0, 0)
+X~X
+~OX
+O~~
+
+Move: O moves to (0, 1)
+XOX
+~OX
+O~~
+
+Move: X moves to (2, 2)
+XOX
+~OX
+O~X
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~~
+~OX
+~~~
+
+Updating to n=3 and w=2:
+~~~
+~~X
+~~~
+
+Updating to n=23 and w=13:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.45557393878
+UCT value 2.122 for state:
+1
+exploration_value: 1.78270523087
+UCT value 1.783 for state:
+2
+exploration_value: 1.45557393878
+UCT value 2.122 for state:
+3
+exploration_value: 1.78270523087
+UCT value 2.283 for state:
+4
+exploration_value: 1.2605645333
+UCT value 2.261 for state:
+5
+exploration_value: 1.78270523087
+UCT value 1.783 for state:
+6
+exploration_value: 1.78270523087
+UCT value 2.283 for state:
+7
+exploration_value: 1.45557393878
+UCT value 2.122 for state:
+8
+exploration_value: 1.78270523087
+UCT value 2.283 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+~~~
+~X~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+~~~
+~X~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+~~~
+~X~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+~~~
+~X~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~~
+O~~
+~X~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~~
+~O~
+~X~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~~
+~~O
+~X~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~~
+~~~
+OX~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~~
+~~~
+~XO
+
+unvisited children: 7
+Node chosen for expansion:
+24
+================ ( simulation ) ================
+Move: X moves to (2, 2)
+O~~
+~~~
+~XX
+
+Move: O moves to (1, 1)
+O~~
+~O~
+~XX
+
+Move: X moves to (1, 0)
+O~~
+XO~
+~XX
+
+Move: O moves to (2, 0)
+O~~
+XO~
+OXX
+
+Move: X moves to (0, 1)
+OX~
+XO~
+OXX
+
+Move: O moves to (0, 2)
+OXO
+XO~
+OXX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~~
+~~~
+~X~
+
+Updating to n=3 and w=1:
+~~~
+~~~
+~X~
+
+Updating to n=24 and w=13:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 0:
+~~~
+~~~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.46489250921
+UCT value 2.132 for state:
+1
+exploration_value: 1.7941180927
+UCT value 1.794 for state:
+2
+exploration_value: 1.46489250921
+UCT value 2.132 for state:
+3
+exploration_value: 1.46489250921
+UCT value 1.798 for state:
+4
+exploration_value: 1.26863465539
+UCT value 2.269 for state:
+5
+exploration_value: 1.7941180927
+UCT value 1.794 for state:
+6
+exploration_value: 1.7941180927
+UCT value 2.294 for state:
+7
+exploration_value: 1.46489250921
+UCT value 2.132 for state:
+8
+exploration_value: 1.7941180927
+UCT value 2.294 for state:
+9
+root in digraph but not expanded
+selected:
+~~~
+X~~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~~
+X~~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~O~
+X~~
+~~~
+
+adding to expansion analysis with: (0, 2)
+Move: O moves to (0, 2)
+~~O
+X~~
+~~~
+
+adding to expansion analysis with: (1, 1)
+Move: O moves to (1, 1)
+~~~
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~~
+X~O
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~~
+X~~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~~
+X~~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~~
+X~~
+~~O
+
+unvisited children: 7
+Node chosen for expansion:
+25
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+O~~
+X~~
+~X~
+
+Move: O moves to (0, 1)
+OO~
+X~~
+~X~
+
+Move: X moves to (1, 2)
+OO~
+X~X
+~X~
+
+Move: O moves to (2, 2)
+OO~
+X~X
+~XO
+
+Move: X moves to (2, 0)
+OO~
+X~X
+XXO
+
+Move: O moves to (0, 2)
+OOO
+X~X
+XXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~~
+X~~
+~~~
+
+Updating to n=3 and w=1:
+~~~
+X~~
+~~~
+
+Updating to n=25 and w=13:
+~~~
+~~~
+~~~
+
+exploration_value: 1.46489250921
+UCT value 2.132 for state:
+1
+exploration_value: 1.7941180927
+UCT value 1.794 for state:
+2
+exploration_value: 1.46489250921
+UCT value 2.132 for state:
+3
+exploration_value: 1.46489250921
+UCT value 1.798 for state:
+4
+exploration_value: 1.26863465539
+UCT value 2.269 for state:
+5
+exploration_value: 1.7941180927
+UCT value 1.794 for state:
+6
+exploration_value: 1.46489250921
+UCT value 1.798 for state:
+7
+exploration_value: 1.46489250921
+UCT value 2.132 for state:
+8
+exploration_value: 1.7941180927
+UCT value 2.294 for state:
+9
+MCTS complete. Suggesting move: (0, 2)
+
+Move: X moves to (0, 2)
+~~X
+~~~
+~~~
+
+
+================ ( Ply #2. It is O's move. ) ================
+Move: O moves to (1, 1)
+~~X
+~O~
+~~~
+
+
+================ ( Ply #3. It is X's move. ) ================
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~X
+~O~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~XX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~X
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~X
+~OX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~X
+~O~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~X
+~O~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~X
+~O~
+~~X
+
+unvisited children: 7
+Node chosen for expansion:
+27
+================ ( simulation ) ================
+Move: O moves to (0, 0)
+O~X
+~O~
+~X~
+
+Move: X moves to (0, 1)
+OXX
+~O~
+~X~
+
+Move: O moves to (1, 0)
+OXX
+OO~
+~X~
+
+Move: X moves to (1, 2)
+OXX
+OOX
+~X~
+
+Move: O moves to (2, 0)
+OXX
+OOX
+OX~
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~X
+~O~
+~X~
+
+Updating to n=1 and w=0:
+~~X
+~O~
+~~~
+
+Updating to n=3 and w=1:
+~~X
+~~~
+~~~
+
+Updating to n=26 and w=13:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~X
+~O~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~XX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~X
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~X
+~OX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~X
+~O~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~X
+~O~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~X
+~O~
+~~X
+
+unvisited children: 6
+Node chosen for expansion:
+28
+================ ( simulation ) ================
+Move: O moves to (0, 0)
+O~X
+XO~
+~~~
+
+Move: X moves to (2, 2)
+O~X
+XO~
+~~X
+
+Move: O moves to (2, 1)
+O~X
+XO~
+~OX
+
+Move: X moves to (0, 1)
+OXX
+XO~
+~OX
+
+Move: O moves to (2, 0)
+OXX
+XO~
+OOX
+
+Move: X moves to (1, 2)
+OXX
+XOX
+OOX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+XO~
+~~~
+
+Updating to n=2 and w=1:
+~~X
+~O~
+~~~
+
+Updating to n=4 and w=2:
+~~X
+~~~
+~~~
+
+Updating to n=27 and w=14:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~X
+~O~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~XX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~X
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~X
+~OX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~X
+~O~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~X
+~O~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~X
+~O~
+~~X
+
+unvisited children: 5
+Node chosen for expansion:
+29
+================ ( simulation ) ================
+Move: O moves to (2, 1)
+X~X
+~O~
+~O~
+
+Move: X moves to (2, 0)
+X~X
+~O~
+XO~
+
+Move: O moves to (1, 0)
+X~X
+OO~
+XO~
+
+Move: X moves to (0, 1)
+XXX
+OO~
+XO~
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+X~X
+~O~
+~~~
+
+Updating to n=3 and w=2:
+~~X
+~O~
+~~~
+
+Updating to n=5 and w=3:
+~~X
+~~~
+~~~
+
+Updating to n=28 and w=15:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~X
+~O~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~XX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~X
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~X
+~OX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~X
+~O~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~X
+~O~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~X
+~O~
+~~X
+
+unvisited children: 4
+Node chosen for expansion:
+30
+================ ( simulation ) ================
+Move: O moves to (2, 2)
+~~X
+~O~
+X~O
+
+Move: X moves to (0, 1)
+~XX
+~O~
+X~O
+
+Move: O moves to (1, 0)
+~XX
+OO~
+X~O
+
+Move: X moves to (0, 0)
+XXX
+OO~
+X~O
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+~O~
+X~~
+
+Updating to n=4 and w=3:
+~~X
+~O~
+~~~
+
+Updating to n=6 and w=4:
+~~X
+~~~
+~~~
+
+Updating to n=29 and w=16:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~X
+~O~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~XX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~X
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~X
+~OX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~X
+~O~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~X
+~O~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~X
+~O~
+~~X
+
+unvisited children: 3
+Node chosen for expansion:
+31
+================ ( simulation ) ================
+Move: O moves to (0, 0)
+OXX
+~O~
+~~~
+
+Move: X moves to (1, 2)
+OXX
+~OX
+~~~
+
+Move: O moves to (1, 0)
+OXX
+OOX
+~~~
+
+Move: X moves to (2, 0)
+OXX
+OOX
+X~~
+
+Move: O moves to (2, 2)
+OXX
+OOX
+X~O
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~XX
+~O~
+~~~
+
+Updating to n=5 and w=3:
+~~X
+~O~
+~~~
+
+Updating to n=7 and w=4:
+~~X
+~~~
+~~~
+
+Updating to n=30 and w=16:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~X
+~O~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~XX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~X
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~X
+~OX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~X
+~O~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~X
+~O~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~X
+~O~
+~~X
+
+unvisited children: 2
+Node chosen for expansion:
+32
+================ ( simulation ) ================
+Move: O moves to (2, 2)
+~~X
+~OX
+~~O
+
+Move: X moves to (2, 0)
+~~X
+~OX
+X~O
+
+Move: O moves to (0, 1)
+~OX
+~OX
+X~O
+
+Move: X moves to (0, 0)
+XOX
+~OX
+X~O
+
+Move: O moves to (1, 0)
+XOX
+OOX
+X~O
+
+Move: X moves to (2, 1)
+XOX
+OOX
+XXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~X
+~OX
+~~~
+
+Updating to n=6 and w=3:
+~~X
+~O~
+~~~
+
+Updating to n=8 and w=4:
+~~X
+~~~
+~~~
+
+Updating to n=31 and w=16:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: X moves to (0, 0)
+X~X
+~O~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+~XX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+~~X
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+~~X
+~OX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: X moves to (2, 0)
+~~X
+~O~
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+~~X
+~O~
+~X~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+~~X
+~O~
+~~X
+
+unvisited children: 1
+node is expanded
+Node chosen for expansion:
+33
+================ ( simulation ) ================
+Move: O moves to (2, 0)
+~~X
+~O~
+O~X
+
+Move: X moves to (1, 2)
+~~X
+~OX
+O~X
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+~O~
+~~X
+
+Updating to n=7 and w=4:
+~~X
+~O~
+~~~
+
+Updating to n=9 and w=5:
+~~X
+~~~
+~~~
+
+Updating to n=32 and w=17:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.64441774186
+UCT value 2.644 for state:
+32
+exploration_value: 2.64441774186
+UCT value 3.644 for state:
+33
+exploration_value: 2.64441774186
+UCT value 2.644 for state:
+27
+exploration_value: 2.64441774186
+UCT value 3.644 for state:
+28
+exploration_value: 2.64441774186
+UCT value 3.644 for state:
+29
+exploration_value: 2.64441774186
+UCT value 3.644 for state:
+30
+exploration_value: 2.64441774186
+UCT value 2.644 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~O~
+~~X
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~O~
+~~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OO~
+~~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+~OO
+~~X
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+~O~
+O~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~O~
+~OX
+
+unvisited children: 6
+Node chosen for expansion:
+34
+================ ( simulation ) ================
+Move: X moves to (0, 1)
+~XX
+~OO
+~~X
+
+Move: O moves to (2, 0)
+~XX
+~OO
+O~X
+
+Move: X moves to (1, 0)
+~XX
+XOO
+O~X
+
+Move: O moves to (2, 1)
+~XX
+XOO
+OOX
+
+Move: X moves to (0, 0)
+XXX
+XOO
+OOX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+~OO
+~~X
+
+Updating to n=2 and w=2:
+~~X
+~O~
+~~X
+
+Updating to n=8 and w=5:
+~~X
+~O~
+~~~
+
+Updating to n=10 and w=6:
+~~X
+~~~
+~~~
+
+Updating to n=33 and w=18:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.65568268487
+UCT value 2.656 for state:
+32
+exploration_value: 1.87785592975
+UCT value 2.878 for state:
+33
+exploration_value: 2.65568268487
+UCT value 2.656 for state:
+27
+exploration_value: 2.65568268487
+UCT value 3.656 for state:
+28
+exploration_value: 2.65568268487
+UCT value 3.656 for state:
+29
+exploration_value: 2.65568268487
+UCT value 3.656 for state:
+30
+exploration_value: 2.65568268487
+UCT value 2.656 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+XO~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+XO~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+XOO
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+XO~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+XO~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+XO~
+~~O
+
+unvisited children: 6
+Node chosen for expansion:
+35
+================ ( simulation ) ================
+Move: X moves to (0, 0)
+X~X
+XO~
+~~O
+
+Move: O moves to (0, 1)
+XOX
+XO~
+~~O
+
+Move: X moves to (2, 0)
+XOX
+XO~
+X~O
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+XO~
+~~O
+
+Updating to n=2 and w=2:
+~~X
+XO~
+~~~
+
+Updating to n=9 and w=6:
+~~X
+~O~
+~~~
+
+Updating to n=11 and w=7:
+~~X
+~~~
+~~~
+
+Updating to n=34 and w=19:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.66657552241
+UCT value 2.667 for state:
+32
+exploration_value: 1.8855583483
+UCT value 2.886 for state:
+33
+exploration_value: 2.66657552241
+UCT value 2.667 for state:
+27
+exploration_value: 1.8855583483
+UCT value 2.886 for state:
+28
+exploration_value: 2.66657552241
+UCT value 3.667 for state:
+29
+exploration_value: 2.66657552241
+UCT value 3.667 for state:
+30
+exploration_value: 2.66657552241
+UCT value 2.667 for state:
+31
+root in digraph but not expanded
+selected:
+X~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+XOX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+X~X
+OO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+X~X
+~OO
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+X~X
+~O~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+X~X
+~O~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+X~X
+~O~
+~~O
+
+unvisited children: 6
+Node chosen for expansion:
+36
+================ ( simulation ) ================
+Move: X moves to (0, 1)
+XXX
+~OO
+~~~
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+X~X
+~OO
+~~~
+
+Updating to n=2 and w=2:
+X~X
+~O~
+~~~
+
+Updating to n=10 and w=7:
+~~X
+~O~
+~~~
+
+Updating to n=12 and w=8:
+~~X
+~~~
+~~~
+
+Updating to n=35 and w=20:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.67711901253
+UCT value 2.677 for state:
+32
+exploration_value: 1.8930137403
+UCT value 2.893 for state:
+33
+exploration_value: 2.67711901253
+UCT value 2.677 for state:
+27
+exploration_value: 1.8930137403
+UCT value 2.893 for state:
+28
+exploration_value: 1.8930137403
+UCT value 2.893 for state:
+29
+exploration_value: 2.67711901253
+UCT value 3.677 for state:
+30
+exploration_value: 2.67711901253
+UCT value 2.677 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~O~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~O~
+X~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~O~
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+~OO
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~O~
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+~O~
+X~O
+
+unvisited children: 6
+Node chosen for expansion:
+37
+================ ( simulation ) ================
+Move: X moves to (0, 1)
+~XX
+~OO
+X~~
+
+Move: O moves to (1, 0)
+~XX
+OOO
+X~~
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~X
+~OO
+X~~
+
+Updating to n=2 and w=1:
+~~X
+~O~
+X~~
+
+Updating to n=11 and w=7:
+~~X
+~O~
+~~~
+
+Updating to n=13 and w=8:
+~~X
+~~~
+~~~
+
+Updating to n=36 and w=20:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.68733392187
+UCT value 2.687 for state:
+32
+exploration_value: 1.90023679002
+UCT value 2.900 for state:
+33
+exploration_value: 2.68733392187
+UCT value 2.687 for state:
+27
+exploration_value: 1.90023679002
+UCT value 2.900 for state:
+28
+exploration_value: 1.90023679002
+UCT value 2.900 for state:
+29
+exploration_value: 1.90023679002
+UCT value 2.400 for state:
+30
+exploration_value: 2.68733392187
+UCT value 2.687 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~O~
+~~X
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~O~
+~~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OO~
+~~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+~OO
+~~X
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+~O~
+O~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~O~
+~OX
+
+unvisited children: 5
+Node chosen for expansion:
+38
+================ ( simulation ) ================
+Move: X moves to (0, 0)
+X~X
+~O~
+~OX
+
+Move: O moves to (1, 0)
+X~X
+OO~
+~OX
+
+Move: X moves to (0, 1)
+XXX
+OO~
+~OX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+~O~
+~OX
+
+Updating to n=3 and w=3:
+~~X
+~O~
+~~X
+
+Updating to n=12 and w=8:
+~~X
+~O~
+~~~
+
+Updating to n=14 and w=9:
+~~X
+~~~
+~~~
+
+Updating to n=37 and w=21:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.69723924939
+UCT value 2.697 for state:
+32
+exploration_value: 1.55725699752
+UCT value 2.557 for state:
+33
+exploration_value: 2.69723924939
+UCT value 2.697 for state:
+27
+exploration_value: 1.90724093179
+UCT value 2.907 for state:
+28
+exploration_value: 1.90724093179
+UCT value 2.907 for state:
+29
+exploration_value: 1.90724093179
+UCT value 2.407 for state:
+30
+exploration_value: 2.69723924939
+UCT value 2.697 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+XO~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+XO~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+XOO
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+XO~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+XO~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+XO~
+~~O
+
+unvisited children: 5
+Node chosen for expansion:
+39
+================ ( simulation ) ================
+Move: X moves to (1, 2)
+~~X
+XOX
+O~~
+
+Move: O moves to (2, 2)
+~~X
+XOX
+O~O
+
+Move: X moves to (2, 1)
+~~X
+XOX
+OXO
+
+Move: O moves to (0, 0)
+O~X
+XOX
+OXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~X
+XO~
+O~~
+
+Updating to n=3 and w=2:
+~~X
+XO~
+~~~
+
+Updating to n=13 and w=8:
+~~X
+~O~
+~~~
+
+Updating to n=15 and w=9:
+~~X
+~~~
+~~~
+
+Updating to n=38 and w=21:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.70685241965
+UCT value 2.707 for state:
+32
+exploration_value: 1.56280718245
+UCT value 2.563 for state:
+33
+exploration_value: 2.70685241965
+UCT value 2.707 for state:
+27
+exploration_value: 1.56280718245
+UCT value 2.229 for state:
+28
+exploration_value: 1.91403848666
+UCT value 2.914 for state:
+29
+exploration_value: 1.91403848666
+UCT value 2.414 for state:
+30
+exploration_value: 2.70685241965
+UCT value 2.707 for state:
+31
+root in digraph but not expanded
+selected:
+X~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+XOX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+X~X
+OO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+X~X
+~OO
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+X~X
+~O~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+X~X
+~O~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+X~X
+~O~
+~~O
+
+unvisited children: 5
+Node chosen for expansion:
+40
+================ ( simulation ) ================
+Move: X moves to (2, 0)
+X~X
+~O~
+XO~
+
+Move: O moves to (0, 1)
+XOX
+~O~
+XO~
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+X~X
+~O~
+~O~
+
+Updating to n=3 and w=2:
+X~X
+~O~
+~~~
+
+Updating to n=14 and w=8:
+~~X
+~O~
+~~~
+
+Updating to n=16 and w=9:
+~~X
+~~~
+~~~
+
+Updating to n=39 and w=21:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.71618945057
+UCT value 2.716 for state:
+32
+exploration_value: 1.56819793774
+UCT value 2.568 for state:
+33
+exploration_value: 2.71618945057
+UCT value 2.716 for state:
+27
+exploration_value: 1.56819793774
+UCT value 2.235 for state:
+28
+exploration_value: 1.56819793774
+UCT value 2.235 for state:
+29
+exploration_value: 1.92064078104
+UCT value 2.421 for state:
+30
+exploration_value: 2.71618945057
+UCT value 2.716 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~OX
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~OX
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~OX
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OOX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+~OX
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~OX
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+~OX
+~~O
+
+unvisited children: 6
+Node chosen for expansion:
+41
+================ ( simulation ) ================
+Move: X moves to (0, 0)
+X~X
+~OX
+O~~
+
+Move: O moves to (0, 1)
+XOX
+~OX
+O~~
+
+Move: X moves to (2, 2)
+XOX
+~OX
+O~X
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+~OX
+O~~
+
+Updating to n=2 and w=1:
+~~X
+~OX
+~~~
+
+Updating to n=15 and w=9:
+~~X
+~O~
+~~~
+
+Updating to n=17 and w=10:
+~~X
+~~~
+~~~
+
+Updating to n=40 and w=22:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.92705825001
+UCT value 2.427 for state:
+32
+exploration_value: 1.57343778357
+UCT value 2.573 for state:
+33
+exploration_value: 2.72526509953
+UCT value 2.725 for state:
+27
+exploration_value: 1.57343778357
+UCT value 2.240 for state:
+28
+exploration_value: 1.57343778357
+UCT value 2.240 for state:
+29
+exploration_value: 1.92705825001
+UCT value 2.427 for state:
+30
+exploration_value: 2.72526509953
+UCT value 2.725 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~X~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~O~
+~X~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~O~
+~X~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OO~
+~X~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+~OO
+~X~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+~O~
+OX~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+~O~
+~XO
+
+unvisited children: 6
+Node chosen for expansion:
+42
+================ ( simulation ) ================
+Move: X moves to (2, 2)
+~~X
+~OO
+~XX
+
+Move: O moves to (2, 0)
+~~X
+~OO
+OXX
+
+Move: X moves to (0, 0)
+X~X
+~OO
+OXX
+
+Move: O moves to (0, 1)
+XOX
+~OO
+OXX
+
+Move: X moves to (1, 0)
+XOX
+XOO
+OXX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~~X
+~OO
+~X~
+
+Updating to n=2 and w=0:
+~~X
+~O~
+~X~
+
+Updating to n=16 and w=9:
+~~X
+~O~
+~~~
+
+Updating to n=18 and w=10:
+~~X
+~~~
+~~~
+
+Updating to n=41 and w=22:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.9333005276
+UCT value 2.433 for state:
+32
+exploration_value: 1.57853458613
+UCT value 2.579 for state:
+33
+exploration_value: 1.9333005276
+UCT value 1.933 for state:
+27
+exploration_value: 1.57853458613
+UCT value 2.245 for state:
+28
+exploration_value: 1.57853458613
+UCT value 2.245 for state:
+29
+exploration_value: 1.9333005276
+UCT value 2.433 for state:
+30
+exploration_value: 2.73409299109
+UCT value 2.734 for state:
+31
+root in digraph but not expanded
+selected:
+~XX
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+OXX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~XX
+OO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~XX
+~OO
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~XX
+~O~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~XX
+~O~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~XX
+~O~
+~~O
+
+unvisited children: 6
+Node chosen for expansion:
+43
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+~XX
+~O~
+OX~
+
+Move: O moves to (1, 0)
+~XX
+OO~
+OX~
+
+Move: X moves to (1, 2)
+~XX
+OOX
+OX~
+
+Move: O moves to (2, 2)
+~XX
+OOX
+OXO
+
+Move: X moves to (0, 0)
+XXX
+OOX
+OXO
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~XX
+~O~
+O~~
+
+Updating to n=2 and w=1:
+~XX
+~O~
+~~~
+
+Updating to n=17 and w=10:
+~~X
+~O~
+~~~
+
+Updating to n=19 and w=11:
+~~X
+~~~
+~~~
+
+Updating to n=42 and w=23:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.93937652605
+UCT value 2.439 for state:
+32
+exploration_value: 1.58349562222
+UCT value 2.583 for state:
+33
+exploration_value: 1.93937652605
+UCT value 1.939 for state:
+27
+exploration_value: 1.58349562222
+UCT value 2.250 for state:
+28
+exploration_value: 1.58349562222
+UCT value 2.250 for state:
+29
+exploration_value: 1.93937652605
+UCT value 2.439 for state:
+30
+exploration_value: 1.93937652605
+UCT value 2.439 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~O~
+~~X
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~O~
+~~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OO~
+~~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+~OO
+~~X
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+~O~
+O~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~O~
+~OX
+
+unvisited children: 4
+Node chosen for expansion:
+44
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+~~X
+OO~
+~XX
+
+Move: O moves to (0, 1)
+~OX
+OO~
+~XX
+
+Move: X moves to (1, 2)
+~OX
+OOX
+~XX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+OO~
+~~X
+
+Updating to n=4 and w=4:
+~~X
+~O~
+~~X
+
+Updating to n=18 and w=11:
+~~X
+~O~
+~~~
+
+Updating to n=20 and w=12:
+~~X
+~~~
+~~~
+
+Updating to n=43 and w=24:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.94529450548
+UCT value 2.445 for state:
+32
+exploration_value: 1.37553265564
+UCT value 2.376 for state:
+33
+exploration_value: 1.94529450548
+UCT value 1.945 for state:
+27
+exploration_value: 1.58832763623
+UCT value 2.255 for state:
+28
+exploration_value: 1.58832763623
+UCT value 2.255 for state:
+29
+exploration_value: 1.94529450548
+UCT value 2.445 for state:
+30
+exploration_value: 1.94529450548
+UCT value 2.445 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~OX
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~OX
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~OX
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OOX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+~OX
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~OX
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+~OX
+~~O
+
+unvisited children: 5
+Node chosen for expansion:
+45
+================ ( simulation ) ================
+Move: X moves to (2, 0)
+~~X
+~OX
+XO~
+
+Move: O moves to (2, 2)
+~~X
+~OX
+XOO
+
+Move: X moves to (0, 1)
+~XX
+~OX
+XOO
+
+Move: O moves to (1, 0)
+~XX
+OOX
+XOO
+
+Move: X moves to (0, 0)
+XXX
+OOX
+XOO
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~~X
+~OX
+~O~
+
+Updating to n=3 and w=2:
+~~X
+~OX
+~~~
+
+Updating to n=19 and w=12:
+~~X
+~O~
+~~~
+
+Updating to n=21 and w=13:
+~~X
+~~~
+~~~
+
+Updating to n=44 and w=25:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.59303689033
+UCT value 2.260 for state:
+32
+exploration_value: 1.37961099103
+UCT value 2.380 for state:
+33
+exploration_value: 1.95106213549
+UCT value 1.951 for state:
+27
+exploration_value: 1.59303689033
+UCT value 2.260 for state:
+28
+exploration_value: 1.59303689033
+UCT value 2.260 for state:
+29
+exploration_value: 1.95106213549
+UCT value 2.451 for state:
+30
+exploration_value: 1.95106213549
+UCT value 2.451 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~O~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~O~
+X~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~O~
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+~OO
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~O~
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+~O~
+X~O
+
+unvisited children: 5
+Node chosen for expansion:
+46
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+~OX
+~O~
+XX~
+
+Move: O moves to (1, 2)
+~OX
+~OO
+XX~
+
+Move: X moves to (2, 2)
+~OX
+~OO
+XXX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~OX
+~O~
+X~~
+
+Updating to n=3 and w=2:
+~~X
+~O~
+X~~
+
+Updating to n=20 and w=13:
+~~X
+~O~
+~~~
+
+Updating to n=22 and w=14:
+~~X
+~~~
+~~~
+
+Updating to n=45 and w=26:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.59762920905
+UCT value 2.264 for state:
+32
+exploration_value: 1.38358805735
+UCT value 2.384 for state:
+33
+exploration_value: 1.9566865496
+UCT value 1.957 for state:
+27
+exploration_value: 1.59762920905
+UCT value 2.264 for state:
+28
+exploration_value: 1.59762920905
+UCT value 2.264 for state:
+29
+exploration_value: 1.59762920905
+UCT value 2.264 for state:
+30
+exploration_value: 1.9566865496
+UCT value 2.457 for state:
+31
+root in digraph but not expanded
+selected:
+~XX
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+OXX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~XX
+OO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~XX
+~OO
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~XX
+~O~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~XX
+~O~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~XX
+~O~
+~~O
+
+unvisited children: 5
+Node chosen for expansion:
+47
+================ ( simulation ) ================
+Move: X moves to (2, 2)
+~XX
+~OO
+~~X
+
+Move: O moves to (2, 1)
+~XX
+~OO
+~OX
+
+Move: X moves to (1, 0)
+~XX
+XOO
+~OX
+
+Move: O moves to (0, 0)
+OXX
+XOO
+~OX
+
+Move: X moves to (2, 0)
+OXX
+XOO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+~XX
+~OO
+~~~
+
+Updating to n=3 and w=1:
+~XX
+~O~
+~~~
+
+Updating to n=21 and w=13:
+~~X
+~O~
+~~~
+
+Updating to n=23 and w=14:
+~~X
+~~~
+~~~
+
+Updating to n=46 and w=26:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.60211001868
+UCT value 2.269 for state:
+32
+exploration_value: 1.38746855394
+UCT value 2.387 for state:
+33
+exploration_value: 1.96217439364
+UCT value 1.962 for state:
+27
+exploration_value: 1.60211001868
+UCT value 2.269 for state:
+28
+exploration_value: 1.60211001868
+UCT value 2.269 for state:
+29
+exploration_value: 1.60211001868
+UCT value 2.269 for state:
+30
+exploration_value: 1.60211001868
+UCT value 1.935 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~O~
+~~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1)]
+legal moves: [(0, 0), (0, 1), (1, 0), (1, 2), (2, 0), (2, 1)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~O~
+~~X
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~O~
+~~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OO~
+~~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+~OO
+~~X
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+~O~
+O~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~O~
+~OX
+
+unvisited children: 3
+Node chosen for expansion:
+48
+================ ( simulation ) ================
+Move: X moves to (1, 0)
+~OX
+XO~
+~~X
+
+Move: O moves to (0, 0)
+OOX
+XO~
+~~X
+
+Move: X moves to (2, 1)
+OOX
+XO~
+~XX
+
+Move: O moves to (1, 2)
+OOX
+XOO
+~XX
+
+Move: X moves to (2, 0)
+OOX
+XOO
+XXX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+~OX
+~O~
+~~X
+
+Updating to n=5 and w=5:
+~~X
+~O~
+~~X
+
+Updating to n=22 and w=14:
+~~X
+~O~
+~~~
+
+Updating to n=24 and w=15:
+~~X
+~~~
+~~~
+
+Updating to n=47 and w=27:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.60648438253
+UCT value 2.273 for state:
+32
+exploration_value: 1.24437828148
+UCT value 2.244 for state:
+33
+exploration_value: 1.96753186887
+UCT value 1.968 for state:
+27
+exploration_value: 1.60648438253
+UCT value 2.273 for state:
+28
+exploration_value: 1.60648438253
+UCT value 2.273 for state:
+29
+exploration_value: 1.60648438253
+UCT value 2.273 for state:
+30
+exploration_value: 1.60648438253
+UCT value 1.940 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+~OX
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 0), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 0), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+~OX
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+~OX
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+~~X
+OOX
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+~OX
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+~OX
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+~OX
+~~O
+
+unvisited children: 4
+Node chosen for expansion:
+49
+================ ( simulation ) ================
+Move: X moves to (1, 0)
+O~X
+XOX
+~~~
+
+Move: O moves to (2, 0)
+O~X
+XOX
+O~~
+
+Move: X moves to (0, 1)
+OXX
+XOX
+O~~
+
+Move: O moves to (2, 2)
+OXX
+XOX
+O~O
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+~OX
+~~~
+
+Updating to n=4 and w=2:
+~~X
+~OX
+~~~
+
+Updating to n=23 and w=14:
+~~X
+~O~
+~~~
+
+Updating to n=25 and w=15:
+~~X
+~~~
+~~~
+
+Updating to n=48 and w=27:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.39495709048
+UCT value 1.895 for state:
+32
+exploration_value: 1.24768786393
+UCT value 2.248 for state:
+33
+exploration_value: 1.97276477034
+UCT value 1.973 for state:
+27
+exploration_value: 1.61075703225
+UCT value 2.277 for state:
+28
+exploration_value: 1.61075703225
+UCT value 2.277 for state:
+29
+exploration_value: 1.61075703225
+UCT value 2.277 for state:
+30
+exploration_value: 1.61075703225
+UCT value 1.944 for state:
+31
+root in digraph but not expanded
+selected:
+~~X
+XO~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 0), (0, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 0), (0, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 0)
+Move: O moves to (0, 0)
+O~X
+XO~
+~~~
+
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+~OX
+XO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+~~X
+XOO
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+~~X
+XO~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+~~X
+XO~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+~~X
+XO~
+~~O
+
+unvisited children: 4
+Node chosen for expansion:
+50
+================ ( simulation ) ================
+Move: X moves to (0, 1)
+OXX
+XO~
+~~~
+
+Move: O moves to (2, 2)
+OXX
+XO~
+~~O
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+XO~
+~~~
+
+Updating to n=4 and w=2:
+~~X
+XO~
+~~~
+
+Updating to n=24 and w=14:
+~~X
+~O~
+~~~
+
+Updating to n=26 and w=15:
+~~X
+~~~
+~~~
+
+Updating to n=49 and w=27:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 26:
+~~X
+~O~
+~~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.39857306305
+UCT value 1.899 for state:
+32
+exploration_value: 1.25092208892
+UCT value 2.251 for state:
+33
+exploration_value: 1.9778785214
+UCT value 1.978 for state:
+27
+exploration_value: 1.39857306305
+UCT value 1.899 for state:
+28
+exploration_value: 1.61493239598
+UCT value 2.282 for state:
+29
+exploration_value: 1.61493239598
+UCT value 2.282 for state:
+30
+exploration_value: 1.61493239598
+UCT value 1.948 for state:
+31
+root in digraph but not expanded
+selected:
+X~X
+~O~
+~~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+XOX
+~O~
+~~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+X~X
+OO~
+~~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+X~X
+~OO
+~~~
+
+adding to expansion analysis with: (2, 0)
+Move: O moves to (2, 0)
+X~X
+~O~
+O~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+X~X
+~O~
+~O~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+X~X
+~O~
+~~O
+
+unvisited children: 4
+Node chosen for expansion:
+51
+================ ( simulation ) ================
+Move: X moves to (0, 1)
+XXX
+~O~
+O~~
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+X~X
+~O~
+O~~
+
+Updating to n=4 and w=3:
+X~X
+~O~
+~~~
+
+Updating to n=25 and w=15:
+~~X
+~O~
+~~~
+
+Updating to n=27 and w=16:
+~~X
+~~~
+~~~
+
+Updating to n=50 and w=28:
+~~~
+~~~
+~~~
+
+exploration_value: 1.39857306305
+UCT value 1.899 for state:
+32
+exploration_value: 1.25092208892
+UCT value 2.251 for state:
+33
+exploration_value: 1.9778785214
+UCT value 1.978 for state:
+27
+exploration_value: 1.39857306305
+UCT value 1.899 for state:
+28
+exploration_value: 1.39857306305
+UCT value 2.149 for state:
+29
+exploration_value: 1.61493239598
+UCT value 2.282 for state:
+30
+exploration_value: 1.61493239598
+UCT value 1.948 for state:
+31
+MCTS complete. Suggesting move: (2, 0)
+
+Move: X moves to (2, 0)
+~~X
+~O~
+X~~
+
+
+================ ( Ply #4. It is O's move. ) ================
+Move: O moves to (0, 0)
+O~X
+~O~
+X~~
+
+
+================ ( Ply #5. It is X's move. ) ================
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+O~X
+~O~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+OXX
+~O~
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+O~X
+XO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+O~X
+~OX
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+O~X
+~O~
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+O~X
+~O~
+X~X
+
+unvisited children: 5
+Node chosen for expansion:
+53
+================ ( simulation ) ================
+Move: O moves to (1, 2)
+O~X
+XOO
+X~~
+
+Move: X moves to (0, 1)
+OXX
+XOO
+X~~
+
+Move: O moves to (2, 2)
+OXX
+XOO
+X~O
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+XO~
+X~~
+
+Updating to n=1 and w=0:
+O~X
+~O~
+X~~
+
+Updating to n=4 and w=2:
+~~X
+~O~
+X~~
+
+Updating to n=26 and w=15:
+~~X
+~O~
+~~~
+
+Updating to n=28 and w=16:
+~~X
+~~~
+~~~
+
+Updating to n=51 and w=28:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+O~X
+~O~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+OXX
+~O~
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+O~X
+XO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+O~X
+~OX
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+O~X
+~O~
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+O~X
+~O~
+X~X
+
+unvisited children: 4
+Node chosen for expansion:
+54
+================ ( simulation ) ================
+Move: O moves to (2, 2)
+OXX
+~O~
+X~O
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+OXX
+~O~
+X~~
+
+Updating to n=2 and w=0:
+O~X
+~O~
+X~~
+
+Updating to n=5 and w=2:
+~~X
+~O~
+X~~
+
+Updating to n=27 and w=15:
+~~X
+~O~
+~~~
+
+Updating to n=29 and w=16:
+~~X
+~~~
+~~~
+
+Updating to n=52 and w=28:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+O~X
+~O~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+OXX
+~O~
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+O~X
+XO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+O~X
+~OX
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+O~X
+~O~
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+O~X
+~O~
+X~X
+
+unvisited children: 3
+Node chosen for expansion:
+55
+================ ( simulation ) ================
+Move: O moves to (0, 1)
+OOX
+~OX
+X~~
+
+Move: X moves to (1, 0)
+OOX
+XOX
+X~~
+
+Move: O moves to (2, 1)
+OOX
+XOX
+XO~
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+~OX
+X~~
+
+Updating to n=3 and w=0:
+O~X
+~O~
+X~~
+
+Updating to n=6 and w=2:
+~~X
+~O~
+X~~
+
+Updating to n=28 and w=15:
+~~X
+~O~
+~~~
+
+Updating to n=30 and w=16:
+~~X
+~~~
+~~~
+
+Updating to n=53 and w=28:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+O~X
+~O~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+OXX
+~O~
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+O~X
+XO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+O~X
+~OX
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+O~X
+~O~
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+O~X
+~O~
+X~X
+
+unvisited children: 2
+Node chosen for expansion:
+56
+================ ( simulation ) ================
+Move: O moves to (2, 1)
+O~X
+~O~
+XOX
+
+Move: X moves to (0, 1)
+OXX
+~O~
+XOX
+
+Move: O moves to (1, 2)
+OXX
+~OO
+XOX
+
+Move: X moves to (1, 0)
+OXX
+XOO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+~O~
+X~X
+
+Updating to n=4 and w=0:
+O~X
+~O~
+X~~
+
+Updating to n=7 and w=2:
+~~X
+~O~
+X~~
+
+Updating to n=29 and w=15:
+~~X
+~O~
+~~~
+
+Updating to n=31 and w=16:
+~~X
+~~~
+~~~
+
+Updating to n=54 and w=28:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+O~X
+~O~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+OXX
+~O~
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+O~X
+XO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+O~X
+~OX
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+O~X
+~O~
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+O~X
+~O~
+X~X
+
+unvisited children: 1
+node is expanded
+Node chosen for expansion:
+57
+================ ( simulation ) ================
+Move: O moves to (1, 2)
+O~X
+~OO
+XX~
+
+Move: X moves to (2, 2)
+O~X
+~OO
+XXX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+O~X
+~O~
+XX~
+
+Updating to n=5 and w=1:
+O~X
+~O~
+X~~
+
+Updating to n=8 and w=3:
+~~X
+~O~
+X~~
+
+Updating to n=30 and w=16:
+~~X
+~O~
+~~~
+
+Updating to n=32 and w=17:
+~~X
+~~~
+~~~
+
+Updating to n=55 and w=29:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.83736195704
+UCT value 2.837 for state:
+56
+exploration_value: 2.83736195704
+UCT value 3.837 for state:
+57
+exploration_value: 2.83736195704
+UCT value 2.837 for state:
+53
+exploration_value: 2.83736195704
+UCT value 2.837 for state:
+54
+exploration_value: 2.83736195704
+UCT value 2.837 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~O~
+XX~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~O~
+XX~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OO~
+XX~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+~OO
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+~O~
+XXO
+
+unvisited children: 4
+Node chosen for expansion:
+58
+================ ( simulation ) ================
+Move: X moves to (1, 2)
+O~X
+OOX
+XX~
+
+Move: O moves to (2, 2)
+O~X
+OOX
+XXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+OO~
+XX~
+
+Updating to n=2 and w=1:
+O~X
+~O~
+XX~
+
+Updating to n=6 and w=1:
+O~X
+~O~
+X~~
+
+Updating to n=9 and w=3:
+~~X
+~O~
+X~~
+
+Updating to n=31 and w=16:
+~~X
+~O~
+~~~
+
+Updating to n=33 and w=17:
+~~X
+~~~
+~~~
+
+Updating to n=56 and w=29:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.84359309245
+UCT value 2.844 for state:
+56
+exploration_value: 2.01072898539
+UCT value 2.511 for state:
+57
+exploration_value: 2.84359309245
+UCT value 2.844 for state:
+53
+exploration_value: 2.84359309245
+UCT value 2.844 for state:
+54
+exploration_value: 2.84359309245
+UCT value 2.844 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~O~
+X~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 1)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 1)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~O~
+X~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OO~
+X~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+~OO
+X~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+~O~
+XOX
+
+unvisited children: 4
+Node chosen for expansion:
+59
+================ ( simulation ) ================
+Move: X moves to (1, 0)
+O~X
+XOO
+X~X
+
+Move: O moves to (2, 1)
+O~X
+XOO
+XOX
+
+Move: X moves to (0, 1)
+OXX
+XOO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+~OO
+X~X
+
+Updating to n=2 and w=0:
+O~X
+~O~
+X~X
+
+Updating to n=7 and w=1:
+O~X
+~O~
+X~~
+
+Updating to n=10 and w=3:
+~~X
+~O~
+X~~
+
+Updating to n=32 and w=16:
+~~X
+~O~
+~~~
+
+Updating to n=34 and w=17:
+~~X
+~~~
+~~~
+
+Updating to n=57 and w=29:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.01504905857
+UCT value 2.015 for state:
+56
+exploration_value: 2.01504905857
+UCT value 2.515 for state:
+57
+exploration_value: 2.84970258326
+UCT value 2.850 for state:
+53
+exploration_value: 2.84970258326
+UCT value 2.850 for state:
+54
+exploration_value: 2.84970258326
+UCT value 2.850 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+XO~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+XO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+XOO
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+XO~
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+XO~
+X~O
+
+unvisited children: 4
+Node chosen for expansion:
+60
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+OOX
+XO~
+XX~
+
+Move: O moves to (1, 2)
+OOX
+XOO
+XX~
+
+Move: X moves to (2, 2)
+OOX
+XOO
+XXX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+OOX
+XO~
+X~~
+
+Updating to n=2 and w=1:
+O~X
+XO~
+X~~
+
+Updating to n=8 and w=2:
+O~X
+~O~
+X~~
+
+Updating to n=11 and w=4:
+~~X
+~O~
+X~~
+
+Updating to n=33 and w=17:
+~~X
+~O~
+~~~
+
+Updating to n=35 and w=18:
+~~X
+~~~
+~~~
+
+Updating to n=58 and w=30:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.01928627399
+UCT value 2.019 for state:
+56
+exploration_value: 2.01928627399
+UCT value 2.519 for state:
+57
+exploration_value: 2.01928627399
+UCT value 2.519 for state:
+53
+exploration_value: 2.8556948958
+UCT value 2.856 for state:
+54
+exploration_value: 2.8556948958
+UCT value 2.856 for state:
+55
+root in digraph but not expanded
+selected:
+OXX
+~O~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (1, 2), (2, 1), (2, 2)]
+legal moves: [(1, 0), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+OXX
+OO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+OXX
+~OO
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+OXX
+~O~
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+OXX
+~O~
+X~O
+
+unvisited children: 4
+Node chosen for expansion:
+61
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+OXX
+~OO
+XX~
+
+Move: O moves to (1, 0)
+OXX
+OOO
+XX~
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+OXX
+~OO
+X~~
+
+Updating to n=2 and w=0:
+OXX
+~O~
+X~~
+
+Updating to n=9 and w=2:
+O~X
+~O~
+X~~
+
+Updating to n=12 and w=4:
+~~X
+~O~
+X~~
+
+Updating to n=34 and w=17:
+~~X
+~O~
+~~~
+
+Updating to n=36 and w=18:
+~~X
+~~~
+~~~
+
+Updating to n=59 and w=30:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.0234436218
+UCT value 2.023 for state:
+56
+exploration_value: 2.0234436218
+UCT value 2.523 for state:
+57
+exploration_value: 2.0234436218
+UCT value 2.523 for state:
+53
+exploration_value: 2.0234436218
+UCT value 2.023 for state:
+54
+exploration_value: 2.86157425876
+UCT value 2.862 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~OX
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~OX
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OOX
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+~OX
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+~OX
+X~O
+
+unvisited children: 4
+Node chosen for expansion:
+62
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+OOX
+~OX
+XX~
+
+Move: O moves to (2, 2)
+OOX
+~OX
+XXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+OOX
+~OX
+X~~
+
+Updating to n=2 and w=0:
+O~X
+~OX
+X~~
+
+Updating to n=10 and w=2:
+O~X
+~O~
+X~~
+
+Updating to n=13 and w=4:
+~~X
+~O~
+X~~
+
+Updating to n=35 and w=17:
+~~X
+~O~
+~~~
+
+Updating to n=37 and w=18:
+~~X
+~~~
+~~~
+
+Updating to n=60 and w=30:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.02752393572
+UCT value 2.028 for state:
+56
+exploration_value: 2.02752393572
+UCT value 2.528 for state:
+57
+exploration_value: 2.02752393572
+UCT value 2.528 for state:
+53
+exploration_value: 2.02752393572
+UCT value 2.028 for state:
+54
+exploration_value: 2.02752393572
+UCT value 2.028 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~O~
+XX~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~O~
+XX~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OO~
+XX~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+~OO
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+~O~
+XXO
+
+unvisited children: 3
+Node chosen for expansion:
+63
+================ ( simulation ) ================
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+~O~
+XXO
+
+Updating to n=3 and w=1:
+O~X
+~O~
+XX~
+
+Updating to n=11 and w=2:
+O~X
+~O~
+X~~
+
+Updating to n=14 and w=4:
+~~X
+~O~
+X~~
+
+Updating to n=36 and w=17:
+~~X
+~O~
+~~~
+
+Updating to n=38 and w=18:
+~~X
+~~~
+~~~
+
+Updating to n=61 and w=30:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.03152990366
+UCT value 2.032 for state:
+56
+exploration_value: 1.65873860267
+UCT value 1.992 for state:
+57
+exploration_value: 2.03152990366
+UCT value 2.532 for state:
+53
+exploration_value: 2.03152990366
+UCT value 2.032 for state:
+54
+exploration_value: 2.03152990366
+UCT value 2.032 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+XO~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+XO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+XOO
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+XO~
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+XO~
+X~O
+
+unvisited children: 3
+Node chosen for expansion:
+64
+================ ( simulation ) ================
+Move: X moves to (2, 2)
+O~X
+XO~
+XOX
+
+Move: O moves to (0, 1)
+OOX
+XO~
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+XO~
+XO~
+
+Updating to n=3 and w=1:
+O~X
+XO~
+X~~
+
+Updating to n=12 and w=2:
+O~X
+~O~
+X~~
+
+Updating to n=15 and w=4:
+~~X
+~O~
+X~~
+
+Updating to n=37 and w=17:
+~~X
+~O~
+~~~
+
+Updating to n=39 and w=18:
+~~X
+~~~
+~~~
+
+Updating to n=62 and w=30:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.03546407751
+UCT value 2.035 for state:
+56
+exploration_value: 1.66195084484
+UCT value 1.995 for state:
+57
+exploration_value: 1.66195084484
+UCT value 1.995 for state:
+53
+exploration_value: 2.03546407751
+UCT value 2.035 for state:
+54
+exploration_value: 2.03546407751
+UCT value 2.035 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~O~
+X~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 1)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 1)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~O~
+X~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OO~
+X~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+~OO
+X~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+~O~
+XOX
+
+unvisited children: 3
+Node chosen for expansion:
+65
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+O~X
+OO~
+XXX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+O~X
+OO~
+X~X
+
+Updating to n=3 and w=1:
+O~X
+~O~
+X~X
+
+Updating to n=13 and w=3:
+O~X
+~O~
+X~~
+
+Updating to n=16 and w=5:
+~~X
+~O~
+X~~
+
+Updating to n=38 and w=18:
+~~X
+~O~
+~~~
+
+Updating to n=40 and w=19:
+~~X
+~~~
+~~~
+
+Updating to n=63 and w=31:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.66510644714
+UCT value 1.998 for state:
+56
+exploration_value: 1.66510644714
+UCT value 1.998 for state:
+57
+exploration_value: 1.66510644714
+UCT value 1.998 for state:
+53
+exploration_value: 2.03932888202
+UCT value 2.039 for state:
+54
+exploration_value: 2.03932888202
+UCT value 2.039 for state:
+55
+root in digraph but not expanded
+selected:
+OXX
+~O~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (1, 2), (2, 1), (2, 2)]
+legal moves: [(1, 0), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+OXX
+OO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+OXX
+~OO
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+OXX
+~O~
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+OXX
+~O~
+X~O
+
+unvisited children: 3
+Node chosen for expansion:
+66
+================ ( simulation ) ================
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+OXX
+~O~
+X~O
+
+Updating to n=3 and w=0:
+OXX
+~O~
+X~~
+
+Updating to n=14 and w=3:
+O~X
+~O~
+X~~
+
+Updating to n=17 and w=5:
+~~X
+~O~
+X~~
+
+Updating to n=39 and w=18:
+~~X
+~O~
+~~~
+
+Updating to n=41 and w=19:
+~~X
+~~~
+~~~
+
+Updating to n=64 and w=31:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.66820729234
+UCT value 2.002 for state:
+56
+exploration_value: 1.66820729234
+UCT value 2.002 for state:
+57
+exploration_value: 1.66820729234
+UCT value 2.002 for state:
+53
+exploration_value: 1.66820729234
+UCT value 1.668 for state:
+54
+exploration_value: 2.04312662311
+UCT value 2.043 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~OX
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 0), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~OX
+X~~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OOX
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+~OX
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+~OX
+X~O
+
+unvisited children: 3
+Node chosen for expansion:
+67
+================ ( simulation ) ================
+Move: X moves to (2, 1)
+O~X
+OOX
+XX~
+
+Move: O moves to (2, 2)
+O~X
+OOX
+XXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+OOX
+X~~
+
+Updating to n=3 and w=0:
+O~X
+~OX
+X~~
+
+Updating to n=15 and w=3:
+O~X
+~O~
+X~~
+
+Updating to n=18 and w=5:
+~~X
+~O~
+X~~
+
+Updating to n=40 and w=18:
+~~X
+~O~
+~~~
+
+Updating to n=42 and w=19:
+~~X
+~~~
+~~~
+
+Updating to n=65 and w=31:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.67125517233
+UCT value 2.005 for state:
+56
+exploration_value: 1.67125517233
+UCT value 2.005 for state:
+57
+exploration_value: 1.67125517233
+UCT value 2.005 for state:
+53
+exploration_value: 1.67125517233
+UCT value 1.671 for state:
+54
+exploration_value: 1.67125517233
+UCT value 1.671 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~O~
+X~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 1)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 1)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~O~
+X~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OO~
+X~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+~OO
+X~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+~O~
+XOX
+
+unvisited children: 2
+Node chosen for expansion:
+68
+================ ( simulation ) ================
+Move: X moves to (1, 2)
+O~X
+~OX
+XOX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+O~X
+~O~
+XOX
+
+Updating to n=4 and w=2:
+O~X
+~O~
+X~X
+
+Updating to n=16 and w=4:
+O~X
+~O~
+X~~
+
+Updating to n=19 and w=6:
+~~X
+~O~
+X~~
+
+Updating to n=41 and w=19:
+~~X
+~O~
+~~~
+
+Updating to n=43 and w=20:
+~~X
+~~~
+~~~
+
+Updating to n=66 and w=32:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.44994518994
+UCT value 1.950 for state:
+56
+exploration_value: 1.67425179385
+UCT value 2.008 for state:
+57
+exploration_value: 1.67425179385
+UCT value 2.008 for state:
+53
+exploration_value: 1.67425179385
+UCT value 1.674 for state:
+54
+exploration_value: 1.67425179385
+UCT value 1.674 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~O~
+XX~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~O~
+XX~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OO~
+XX~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+~OO
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+~O~
+XXO
+
+unvisited children: 2
+Node chosen for expansion:
+69
+================ ( simulation ) ================
+Move: X moves to (1, 0)
+O~X
+XOO
+XX~
+
+Move: O moves to (2, 2)
+O~X
+XOO
+XXO
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+~OO
+XX~
+
+Updating to n=4 and w=1:
+O~X
+~O~
+XX~
+
+Updating to n=17 and w=4:
+O~X
+~O~
+X~~
+
+Updating to n=20 and w=6:
+~~X
+~O~
+X~~
+
+Updating to n=42 and w=19:
+~~X
+~O~
+~~~
+
+Updating to n=44 and w=20:
+~~X
+~~~
+~~~
+
+Updating to n=67 and w=32:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.45249735911
+UCT value 1.952 for state:
+56
+exploration_value: 1.45249735911
+UCT value 1.702 for state:
+57
+exploration_value: 1.67719878373
+UCT value 2.011 for state:
+53
+exploration_value: 1.67719878373
+UCT value 1.677 for state:
+54
+exploration_value: 1.67719878373
+UCT value 1.677 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+XO~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+XO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+XOO
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+XO~
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+XO~
+X~O
+
+unvisited children: 2
+Node chosen for expansion:
+70
+================ ( simulation ) ================
+Move: X moves to (0, 1)
+OXX
+XOO
+X~~
+
+Move: O moves to (2, 2)
+OXX
+XOO
+X~O
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+XOO
+X~~
+
+Updating to n=4 and w=1:
+O~X
+XO~
+X~~
+
+Updating to n=18 and w=4:
+O~X
+~O~
+X~~
+
+Updating to n=21 and w=6:
+~~X
+~O~
+X~~
+
+Updating to n=43 and w=19:
+~~X
+~O~
+~~~
+
+Updating to n=45 and w=20:
+~~X
+~~~
+~~~
+
+Updating to n=68 and w=32:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.4550078899
+UCT value 1.955 for state:
+56
+exploration_value: 1.4550078899
+UCT value 1.705 for state:
+57
+exploration_value: 1.4550078899
+UCT value 1.705 for state:
+53
+exploration_value: 1.68009769378
+UCT value 1.680 for state:
+54
+exploration_value: 1.68009769378
+UCT value 1.680 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~O~
+X~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 1)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 1)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~O~
+X~X
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OO~
+X~X
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+~OO
+X~X
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+~O~
+XOX
+
+unvisited children: 1
+node is expanded
+Node chosen for expansion:
+71
+================ ( simulation ) ================
+Move: X moves to (1, 2)
+OOX
+~OX
+X~X
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+OOX
+~O~
+X~X
+
+Updating to n=5 and w=3:
+O~X
+~O~
+X~X
+
+Updating to n=19 and w=5:
+O~X
+~O~
+X~~
+
+Updating to n=22 and w=7:
+~~X
+~O~
+X~~
+
+Updating to n=44 and w=20:
+~~X
+~O~
+~~~
+
+Updating to n=46 and w=21:
+~~X
+~~~
+~~~
+
+Updating to n=69 and w=33:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.30360833767
+UCT value 1.904 for state:
+56
+exploration_value: 1.45747806516
+UCT value 1.707 for state:
+57
+exploration_value: 1.45747806516
+UCT value 1.707 for state:
+53
+exploration_value: 1.68295000529
+UCT value 1.683 for state:
+54
+exploration_value: 1.68295000529
+UCT value 1.683 for state:
+55
+root expanded, move on to a child
+exploration_value: 2.91494519932
+UCT value 3.915 for state:
+65
+exploration_value: 2.91494519932
+UCT value 2.915 for state:
+59
+exploration_value: 2.91494519932
+UCT value 3.915 for state:
+68
+exploration_value: 2.91494519932
+UCT value 3.915 for state:
+71
+root in digraph but not expanded
+selected:
+O~X
+OO~
+X~X
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 2), (2, 1)]
+legal moves: [(0, 1), (1, 2), (2, 1)]
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+OXX
+OO~
+X~X
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+O~X
+OOX
+X~X
+
+adding to expansion analysis with: (2, 1)
+Move: X moves to (2, 1)
+O~X
+OO~
+XXX
+
+unvisited children: 3
+Node chosen for expansion:
+72
+================ ( simulation ) ================
+Move: O moves to (2, 1)
+OXX
+OO~
+XOX
+
+Move: X moves to (1, 2)
+OXX
+OOX
+XOX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+OXX
+OO~
+X~X
+
+Updating to n=2 and w=2:
+O~X
+OO~
+X~X
+
+Updating to n=6 and w=4:
+O~X
+~O~
+X~X
+
+Updating to n=20 and w=6:
+O~X
+~O~
+X~~
+
+Updating to n=23 and w=8:
+~~X
+~O~
+X~~
+
+Updating to n=45 and w=21:
+~~X
+~O~
+~~~
+
+Updating to n=47 and w=22:
+~~X
+~~~
+~~~
+
+Updating to n=70 and w=34:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.19201129365
+UCT value 1.859 for state:
+56
+exploration_value: 1.45990911025
+UCT value 1.710 for state:
+57
+exploration_value: 1.45990911025
+UCT value 1.710 for state:
+53
+exploration_value: 1.68575713319
+UCT value 1.686 for state:
+54
+exploration_value: 1.68575713319
+UCT value 1.686 for state:
+55
+root expanded, move on to a child
+exploration_value: 2.06462068278
+UCT value 3.065 for state:
+65
+exploration_value: 2.91980727127
+UCT value 2.920 for state:
+59
+exploration_value: 2.91980727127
+UCT value 3.920 for state:
+68
+exploration_value: 2.91980727127
+UCT value 3.920 for state:
+71
+root in digraph but not expanded
+selected:
+O~X
+~O~
+XOX
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2)]
+adding to expansion analysis with: (0, 1)
+Move: X moves to (0, 1)
+OXX
+~O~
+XOX
+
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+O~X
+XO~
+XOX
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+O~X
+~OX
+XOX
+
+unvisited children: 3
+Node chosen for expansion:
+73
+================ ( simulation ) ================
+Move: O moves to (1, 2)
+O~X
+XOO
+XOX
+
+Move: X moves to (0, 1)
+OXX
+XOO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+XO~
+XOX
+
+Updating to n=2 and w=1:
+O~X
+~O~
+XOX
+
+Updating to n=7 and w=4:
+O~X
+~O~
+X~X
+
+Updating to n=21 and w=6:
+O~X
+~O~
+X~~
+
+Updating to n=24 and w=8:
+~~X
+~O~
+X~~
+
+Updating to n=46 and w=21:
+~~X
+~O~
+~~~
+
+Updating to n=48 and w=22:
+~~X
+~~~
+~~~
+
+Updating to n=71 and w=34:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.10539715028
+UCT value 1.677 for state:
+56
+exploration_value: 1.46230219643
+UCT value 1.712 for state:
+57
+exploration_value: 1.46230219643
+UCT value 1.712 for state:
+53
+exploration_value: 1.68852042994
+UCT value 1.689 for state:
+54
+exploration_value: 1.68852042994
+UCT value 1.689 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+~O~
+XX~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 0), (1, 2), (2, 2)]
+legal moves: [(0, 1), (1, 0), (1, 2), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+~O~
+XX~
+
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+O~X
+OO~
+XX~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+~OO
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+~O~
+XXO
+
+unvisited children: 1
+node is expanded
+Node chosen for expansion:
+74
+================ ( simulation ) ================
+Move: X moves to (2, 2)
+OOX
+~O~
+XXX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+OOX
+~O~
+XX~
+
+Updating to n=5 and w=2:
+O~X
+~O~
+XX~
+
+Updating to n=22 and w=7:
+O~X
+~O~
+X~~
+
+Updating to n=25 and w=9:
+~~X
+~O~
+X~~
+
+Updating to n=47 and w=22:
+~~X
+~O~
+~~~
+
+Updating to n=49 and w=23:
+~~X
+~~~
+~~~
+
+Updating to n=72 and w=35:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.10717830696
+UCT value 1.679 for state:
+56
+exploration_value: 1.31003066533
+UCT value 1.710 for state:
+57
+exploration_value: 1.46465844398
+UCT value 1.715 for state:
+53
+exploration_value: 1.69124118912
+UCT value 1.691 for state:
+54
+exploration_value: 1.69124118912
+UCT value 1.691 for state:
+55
+root in digraph but not expanded
+selected:
+O~X
+XO~
+X~~
+
+================ ( expansion ) ================
+Legal moves: [(0, 1), (1, 2), (2, 1), (2, 2)]
+legal moves: [(0, 1), (1, 2), (2, 1), (2, 2)]
+adding to expansion analysis with: (0, 1)
+Move: O moves to (0, 1)
+OOX
+XO~
+X~~
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+O~X
+XOO
+X~~
+
+adding to expansion analysis with: (2, 1)
+Move: O moves to (2, 1)
+O~X
+XO~
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+O~X
+XO~
+X~O
+
+unvisited children: 1
+node is expanded
+Node chosen for expansion:
+75
+================ ( simulation ) ================
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+O~X
+XO~
+X~O
+
+Updating to n=5 and w=1:
+O~X
+XO~
+X~~
+
+Updating to n=23 and w=7:
+O~X
+~O~
+X~~
+
+Updating to n=26 and w=9:
+~~X
+~O~
+X~~
+
+Updating to n=48 and w=22:
+~~X
+~O~
+~~~
+
+Updating to n=50 and w=23:
+~~X
+~~~
+~~~
+
+Updating to n=73 and w=35:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.10893242671
+UCT value 1.680 for state:
+56
+exploration_value: 1.31210616721
+UCT value 1.712 for state:
+57
+exploration_value: 1.31210616721
+UCT value 1.512 for state:
+53
+exploration_value: 1.69392064875
+UCT value 1.694 for state:
+54
+exploration_value: 1.69392064875
+UCT value 1.694 for state:
+55
+root expanded, move on to a child
+exploration_value: 2.93394684784
+UCT value 2.934 for state:
+58
+exploration_value: 2.93394684784
+UCT value 3.934 for state:
+74
+exploration_value: 2.93394684784
+UCT value 2.934 for state:
+69
+exploration_value: 2.93394684784
+UCT value 2.934 for state:
+63
+root in digraph but not expanded
+selected:
+OOX
+~O~
+XX~
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (1, 2), (2, 2)]
+legal moves: [(1, 0), (1, 2), (2, 2)]
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+OOX
+XO~
+XX~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+OOX
+~OX
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+OOX
+~O~
+XXX
+
+unvisited children: 3
+Node chosen for expansion:
+76
+================ ( simulation ) ================
+Move: O moves to (1, 2)
+OOX
+XOO
+XX~
+
+Move: X moves to (2, 2)
+OOX
+XOO
+XXX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+OOX
+XO~
+XX~
+
+Updating to n=2 and w=2:
+OOX
+~O~
+XX~
+
+Updating to n=6 and w=3:
+O~X
+~O~
+XX~
+
+Updating to n=24 and w=8:
+O~X
+~O~
+X~~
+
+Updating to n=27 and w=10:
+~~X
+~O~
+X~~
+
+Updating to n=49 and w=23:
+~~X
+~O~
+~~~
+
+Updating to n=51 and w=24:
+~~X
+~~~
+~~~
+
+Updating to n=74 and w=36:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 52:
+O~X
+~O~
+X~~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.11066028569
+UCT value 1.682 for state:
+56
+exploration_value: 1.19965007644
+UCT value 1.700 for state:
+57
+exploration_value: 1.31415059694
+UCT value 1.514 for state:
+53
+exploration_value: 1.69655999441
+UCT value 1.697 for state:
+54
+exploration_value: 1.69655999441
+UCT value 1.697 for state:
+55
+root expanded, move on to a child
+exploration_value: 2.9385183134
+UCT value 2.939 for state:
+58
+exploration_value: 2.07785142063
+UCT value 3.078 for state:
+74
+exploration_value: 2.9385183134
+UCT value 2.939 for state:
+69
+exploration_value: 2.9385183134
+UCT value 2.939 for state:
+63
+root in digraph but not expanded
+selected:
+OOX
+~O~
+XX~
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (1, 2), (2, 2)]
+legal moves: [(1, 0), (1, 2), (2, 2)]
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+OOX
+XO~
+XX~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+OOX
+~OX
+XX~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+OOX
+~O~
+XXX
+
+unvisited children: 2
+Node chosen for expansion:
+77
+================ ( simulation ) ================
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+OOX
+~O~
+XXX
+
+Updating to n=3 and w=3:
+OOX
+~O~
+XX~
+
+Updating to n=7 and w=4:
+O~X
+~O~
+XX~
+
+Updating to n=25 and w=9:
+O~X
+~O~
+X~~
+
+Updating to n=28 and w=11:
+~~X
+~O~
+X~~
+
+Updating to n=50 and w=24:
+~~X
+~O~
+~~~
+
+Updating to n=52 and w=25:
+~~X
+~~~
+~~~
+
+Updating to n=75 and w=37:
+~~~
+~~~
+~~~
+
+exploration_value: 1.11066028569
+UCT value 1.682 for state:
+56
+exploration_value: 1.11066028569
+UCT value 1.682 for state:
+57
+exploration_value: 1.31415059694
+UCT value 1.514 for state:
+53
+exploration_value: 1.69655999441
+UCT value 1.697 for state:
+54
+exploration_value: 1.69655999441
+UCT value 1.697 for state:
+55
+MCTS complete. Suggesting move: (0, 1)
+
+Move: X moves to (0, 1)
+OXX
+~O~
+X~~
+
+
+================ ( Ply #6. It is O's move. ) ================
+Move: O moves to (2, 1)
+OXX
+~O~
+XO~
+
+
+================ ( Ply #7. It is X's move. ) ================
+Running MCTS from this starting state with node id 78:
+OXX
+~O~
+XO~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+OXX
+~O~
+XO~
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (1, 2), (2, 2)]
+legal moves: [(1, 0), (1, 2), (2, 2)]
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+OXX
+XO~
+XO~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+OXX
+~OX
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+OXX
+~O~
+XOX
+
+unvisited children: 3
+Node chosen for expansion:
+79
+================ ( simulation ) ================
+Move: O moves to (1, 2)
+OXX
+XOO
+XO~
+
+Move: X moves to (2, 2)
+OXX
+XOO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+OXX
+XO~
+XO~
+
+Updating to n=1 and w=0:
+OXX
+~O~
+XO~
+
+Updating to n=4 and w=0:
+OXX
+~O~
+X~~
+
+Updating to n=26 and w=9:
+O~X
+~O~
+X~~
+
+Updating to n=29 and w=11:
+~~X
+~O~
+X~~
+
+Updating to n=51 and w=24:
+~~X
+~O~
+~~~
+
+Updating to n=53 and w=25:
+~~X
+~~~
+~~~
+
+Updating to n=76 and w=37:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 78:
+OXX
+~O~
+XO~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+OXX
+~O~
+XO~
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (1, 2), (2, 2)]
+legal moves: [(1, 0), (1, 2), (2, 2)]
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+OXX
+XO~
+XO~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+OXX
+~OX
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+OXX
+~O~
+XOX
+
+unvisited children: 2
+Node chosen for expansion:
+80
+================ ( simulation ) ================
+Move: O moves to (1, 0)
+OXX
+OOX
+XO~
+
+Move: X moves to (2, 2)
+OXX
+OOX
+XOX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+OXX
+~OX
+XO~
+
+Updating to n=2 and w=1:
+OXX
+~O~
+XO~
+
+Updating to n=5 and w=1:
+OXX
+~O~
+X~~
+
+Updating to n=27 and w=10:
+O~X
+~O~
+X~~
+
+Updating to n=30 and w=12:
+~~X
+~O~
+X~~
+
+Updating to n=52 and w=25:
+~~X
+~O~
+~~~
+
+Updating to n=54 and w=26:
+~~X
+~~~
+~~~
+
+Updating to n=77 and w=38:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 78:
+OXX
+~O~
+XO~
+
+================ ( selection ) ================
+root in digraph but not expanded
+selected:
+OXX
+~O~
+XO~
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (1, 2), (2, 2)]
+legal moves: [(1, 0), (1, 2), (2, 2)]
+adding to expansion analysis with: (1, 0)
+Move: X moves to (1, 0)
+OXX
+XO~
+XO~
+
+adding to expansion analysis with: (1, 2)
+Move: X moves to (1, 2)
+OXX
+~OX
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+OXX
+~O~
+XOX
+
+unvisited children: 1
+node is expanded
+Node chosen for expansion:
+81
+================ ( simulation ) ================
+Move: O moves to (1, 2)
+OXX
+~OO
+XOX
+
+Move: X moves to (1, 0)
+OXX
+XOO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+OXX
+~O~
+XOX
+
+Updating to n=3 and w=1:
+OXX
+~O~
+XO~
+
+Updating to n=6 and w=1:
+OXX
+~O~
+X~~
+
+Updating to n=28 and w=10:
+O~X
+~O~
+X~~
+
+Updating to n=31 and w=12:
+~~X
+~O~
+X~~
+
+Updating to n=53 and w=25:
+~~X
+~O~
+~~~
+
+Updating to n=55 and w=26:
+~~X
+~~~
+~~~
+
+Updating to n=78 and w=38:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 78:
+OXX
+~O~
+XO~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.95614754653
+UCT value 3.956 for state:
+80
+exploration_value: 2.95614754653
+UCT value 2.956 for state:
+81
+exploration_value: 2.95614754653
+UCT value 2.956 for state:
+79
+root in digraph but not expanded
+selected:
+OXX
+~OX
+XO~
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (2, 2)]
+legal moves: [(1, 0), (2, 2)]
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+OXX
+OOX
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+OXX
+~OX
+XOO
+
+unvisited children: 2
+Node chosen for expansion:
+82
+================ ( simulation ) ================
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+OXX
+~OX
+XOO
+
+Updating to n=2 and w=1:
+OXX
+~OX
+XO~
+
+Updating to n=4 and w=1:
+OXX
+~O~
+XO~
+
+Updating to n=7 and w=1:
+OXX
+~O~
+X~~
+
+Updating to n=29 and w=10:
+O~X
+~O~
+X~~
+
+Updating to n=32 and w=12:
+~~X
+~O~
+X~~
+
+Updating to n=54 and w=25:
+~~X
+~O~
+~~~
+
+Updating to n=56 and w=26:
+~~X
+~~~
+~~~
+
+Updating to n=79 and w=38:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 78:
+OXX
+~O~
+XO~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.0933238461
+UCT value 2.593 for state:
+80
+exploration_value: 2.96039957264
+UCT value 2.960 for state:
+81
+exploration_value: 2.96039957264
+UCT value 2.960 for state:
+79
+root in digraph but not expanded
+selected:
+OXX
+~O~
+XOX
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (1, 2)]
+legal moves: [(1, 0), (1, 2)]
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+OXX
+OO~
+XOX
+
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+OXX
+~OO
+XOX
+
+unvisited children: 2
+Node chosen for expansion:
+83
+================ ( simulation ) ================
+Move: X moves to (1, 0)
+OXX
+XOO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+OXX
+~OO
+XOX
+
+Updating to n=2 and w=0:
+OXX
+~O~
+XOX
+
+Updating to n=5 and w=1:
+OXX
+~O~
+XO~
+
+Updating to n=8 and w=1:
+OXX
+~O~
+X~~
+
+Updating to n=30 and w=10:
+O~X
+~O~
+X~~
+
+Updating to n=33 and w=12:
+~~X
+~O~
+X~~
+
+Updating to n=55 and w=25:
+~~X
+~O~
+~~~
+
+Updating to n=57 and w=26:
+~~X
+~~~
+~~~
+
+Updating to n=80 and w=38:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 78:
+OXX
+~O~
+XO~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.09628890722
+UCT value 2.596 for state:
+80
+exploration_value: 2.09628890722
+UCT value 2.096 for state:
+81
+exploration_value: 2.96459279181
+UCT value 2.965 for state:
+79
+root in digraph but not expanded
+selected:
+OXX
+XO~
+XO~
+
+================ ( expansion ) ================
+Legal moves: [(1, 2), (2, 2)]
+legal moves: [(1, 2), (2, 2)]
+adding to expansion analysis with: (1, 2)
+Move: O moves to (1, 2)
+OXX
+XOO
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+OXX
+XO~
+XOO
+
+unvisited children: 2
+Node chosen for expansion:
+84
+================ ( simulation ) ================
+Move: X moves to (2, 2)
+OXX
+XOO
+XOX
+
+Reward obtained: 0
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=0:
+OXX
+XOO
+XO~
+
+Updating to n=2 and w=0:
+OXX
+XO~
+XO~
+
+Updating to n=6 and w=1:
+OXX
+~O~
+XO~
+
+Updating to n=9 and w=1:
+OXX
+~O~
+X~~
+
+Updating to n=31 and w=10:
+O~X
+~O~
+X~~
+
+Updating to n=34 and w=12:
+~~X
+~O~
+X~~
+
+Updating to n=56 and w=25:
+~~X
+~O~
+~~~
+
+Updating to n=58 and w=26:
+~~X
+~~~
+~~~
+
+Updating to n=81 and w=38:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 78:
+OXX
+~O~
+XO~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.09921347504
+UCT value 2.599 for state:
+80
+exploration_value: 2.09921347504
+UCT value 2.099 for state:
+81
+exploration_value: 2.09921347504
+UCT value 2.099 for state:
+79
+root in digraph but not expanded
+selected:
+OXX
+~OX
+XO~
+
+================ ( expansion ) ================
+Legal moves: [(1, 0), (2, 2)]
+legal moves: [(1, 0), (2, 2)]
+adding to expansion analysis with: (1, 0)
+Move: O moves to (1, 0)
+OXX
+OOX
+XO~
+
+adding to expansion analysis with: (2, 2)
+Move: O moves to (2, 2)
+OXX
+~OX
+XOO
+
+unvisited children: 1
+node is expanded
+Node chosen for expansion:
+85
+================ ( simulation ) ================
+Move: X moves to (2, 2)
+OXX
+OOX
+XOX
+
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+OXX
+OOX
+XO~
+
+Updating to n=3 and w=2:
+OXX
+~OX
+XO~
+
+Updating to n=7 and w=2:
+OXX
+~O~
+XO~
+
+Updating to n=10 and w=2:
+OXX
+~O~
+X~~
+
+Updating to n=32 and w=11:
+O~X
+~O~
+X~~
+
+Updating to n=35 and w=13:
+~~X
+~O~
+X~~
+
+Updating to n=57 and w=26:
+~~X
+~O~
+~~~
+
+Updating to n=59 and w=27:
+~~X
+~~~
+~~~
+
+Updating to n=82 and w=39:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 78:
+OXX
+~O~
+XO~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.71635774794
+UCT value 2.383 for state:
+80
+exploration_value: 2.10209859752
+UCT value 2.102 for state:
+81
+exploration_value: 2.10209859752
+UCT value 2.102 for state:
+79
+root expanded, move on to a child
+exploration_value: 2.97280891409
+UCT value 2.973 for state:
+82
+exploration_value: 2.97280891409
+UCT value 3.973 for state:
+85
+root in digraph but not expanded
+selected:
+OXX
+OOX
+XO~
+
+================ ( expansion ) ================
+Legal moves: [(2, 2)]
+legal moves: [(2, 2)]
+adding to expansion analysis with: (2, 2)
+Move: X moves to (2, 2)
+OXX
+OOX
+XOX
+
+unvisited children: 1
+node is expanded
+Node chosen for expansion:
+86
+================ ( simulation ) ================
+Reward obtained: 1
+
+================ ( backpropagation ) ================
+Updating to n=1 and w=1:
+OXX
+OOX
+XOX
+
+Updating to n=2 and w=2:
+OXX
+OOX
+XO~
+
+Updating to n=4 and w=3:
+OXX
+~OX
+XO~
+
+Updating to n=8 and w=3:
+OXX
+~O~
+XO~
+
+Updating to n=11 and w=3:
+OXX
+~O~
+X~~
+
+Updating to n=33 and w=12:
+O~X
+~O~
+X~~
+
+Updating to n=36 and w=14:
+~~X
+~O~
+X~~
+
+Updating to n=58 and w=27:
+~~X
+~O~
+~~~
+
+Updating to n=60 and w=28:
+~~X
+~~~
+~~~
+
+Updating to n=83 and w=40:
+~~~
+~~~
+~~~
+
+Running MCTS from this starting state with node id 78:
+OXX
+~O~
+XO~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 1.48842294423
+UCT value 2.238 for state:
+80
+exploration_value: 2.10494528311
+UCT value 2.105 for state:
+81
+exploration_value: 2.10494528311
+UCT value 2.105 for state:
+79
+root expanded, move on to a child
+exploration_value: 2.97683472538
+UCT value 2.977 for state:
+82
+exploration_value: 2.10494528311
+UCT value 3.105 for state:
+85
+root expanded, move on to a child
+exploration_value: 2.97683472538
+UCT value 3.977 for state:
+86
+root in digraph but not expanded
+selected:
+OXX
+OOX
+XOX
+
+exploration_value: 1.48842294423
+UCT value 2.238 for state:
+80
+exploration_value: 2.10494528311
+UCT value 2.105 for state:
+81
+exploration_value: 2.10494528311
+UCT value 2.105 for state:
+79
+MCTS complete. Suggesting move: (1, 2)
+
+Move: X moves to (1, 2)
+OXX
+~OX
+XO~
+
+
+================ ( Ply #8. It is O's move. ) ================
+Move: O moves to (1, 0)
+OXX
+OOX
+XO~
+
+
+================ ( Ply #9. It is X's move. ) ================
+Running MCTS from this starting state with node id 85:
+OXX
+OOX
+XO~
+
+================ ( selection ) ================
+root expanded, move on to a child
+exploration_value: 2.9808075518
+UCT value 3.981 for state:
+86
+root in digraph but not expanded
+selected:
+OXX
+OOX
+XOX
+
+exploration_value: 2.9808075518
+UCT value 3.981 for state:
+86
+MCTS complete. Suggesting move: (2, 2)
+
+Move: X moves to (2, 2)
+OXX
+OOX
+XOX
+
+Game over. Winner is X.
+[('X', 1)]
+[ 1.]
+[ 1.]
+0
+<type 'int'>

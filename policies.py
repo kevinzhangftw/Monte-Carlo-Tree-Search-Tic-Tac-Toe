@@ -24,8 +24,8 @@ class HumanPolicy(Policy):
     def move(self, state):
         legal_moves = state.legal_moves()
         print ('Available legal moves are:')
-        for i in legal_moves:
-            print i 
+        for i, a in enumerate(legal_moves):
+            print i, a 
         state.printBoard()
 
         policyInput = input('Human, enter your next move: ')
