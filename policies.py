@@ -21,12 +21,12 @@ class Policy(object):
         pass
 
 class HumanPolicy(Policy):
-    def move(self, gameStatus):
-        legal_moves = gameStatus.legal_moves()
+    def move(self, state):
+        legal_moves = state.legal_moves()
         print ('Available legal moves are:')
         for i in legal_moves:
             print i 
-        gameStatus.printBoard()
+        state.printBoard()
 
         policyInput = input('Human, enter your next move: ')
         

@@ -60,6 +60,9 @@ class GameState(object):
 
         return output
 
+    def printBoard(self):
+        print('{}'.format(self))
+
     def turn(self):
         """
         Returns the player whose turn it is: 'X' or 'O'
