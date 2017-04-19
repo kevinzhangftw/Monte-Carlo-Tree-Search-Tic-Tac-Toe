@@ -145,7 +145,6 @@ class GameState(object):
                         accum += 1
                 if accum == 3:
                     return player
-
             # Check for winning vertical lines
             for col in range(3):
                 accum = 0
@@ -154,7 +153,6 @@ class GameState(object):
                         accum += 1
                 if accum == 3:
                     return player
-
             # Check for winning diagonal lines (there are 2 possibilities)
             option1 = [self.board[0][0],
                        self.board[1][1],
